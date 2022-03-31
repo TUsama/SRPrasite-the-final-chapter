@@ -1,0 +1,214 @@
+[
+  {
+    "content": "minecraft:gunpowder",
+    "unitWorth": 30,
+    "weight": 50
+  },
+  {
+    "content": "minecraft:stick",
+    "unitWorth": 3100,
+    "weight": 500,
+    "nbt_data": "{display:{Lore:[\"送你见上帝.\"]},ench:[{id:19,lvl:10}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "backstab:stone_dagger",
+    "unitWorth": 200,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"切掉一根还有一根.\"]},ench:[{id:18,lvl:1}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:enchanted_book",
+    "unitWorth": 3100,
+    "weight": 250,
+    "nbt_data": "{StoredEnchantments:[{id:70,lvl:1}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:iron_boots",
+    "unitWorth": 800,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"大家，快跑.\"]},ench:[{id:14,lvl:1}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:leather_boots",
+    "unitWorth": 800,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"世上哪有什么轻功.\"]},ench:[{id:13,lvl:1}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "spartanshields:shield_basic_obsidian",
+    "unitWorth": 1200,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"/ac 死斗<wait.1>,/p 救救我，我要被杀了.\"]},ench:[{id:11,lvl:3}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "cgm:grenade",
+    "unitWorth": 50,
+    "weight": 10,
+    "nbt_data": "{display:{Lore:[\"笑死，还是手榴弹.\"]}}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:gold_nugget",
+    "unitWorth": 20,
+    "weight": 15
+  },
+  {
+    "content": "minecraft:golden_apple:1",
+    "unitWorth": 1800,
+    "weight": 500
+  },
+  {
+    "content": "minecraft:iron_ingot",
+    "unitWorth": 60,
+    "weight": 50
+  },
+  {
+    "content": "minecraft:diamond",
+    "unitWorth": 400,
+    "weight": 25
+  },
+  {
+    "content": "backstab:wood_dagger",
+    "unitWorth": 3100,
+    "weight": 500,
+    "nbt_data": "{display:{Lore:[\"木剑+18.\"]},ench:[{id:16,lvl:18}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "overlast:wooden_sword_plus",
+    "unitWorth": 310,
+    "weight": 5005,
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "overlast:hero_shield",
+    "unitWorth": 310,
+    "weight": 5005,
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "overlast:baseball_pole",
+    "unitWorth": 310,
+    "weight": 5005,
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:chainmail_helmet",
+    "unitWorth": 3100,
+    "weight": 1000,
+    "nbt_data": "{display:{Lore:[\"又硬又脆\"]},ench:[{id:0,lvl:10}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:chainmail_boots",
+    "unitWorth": 3100,
+    "weight": 1000,
+    "nbt_data": "{display:{Lore:[\"又硬又脆.\"]},ench:[{id:0,lvl:10}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:chainmail_chestplate",
+    "unitWorth": 3100,
+    "weight": 1000,
+    "nbt_data": "{display:{Lore:[\"又硬又脆.\"]},ench:[{id:0,lvl:10}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:chainmail_leggings",
+    "unitWorth": 3100,
+    "weight": 1000,
+    "nbt_data": "{display:{Lore:[\"又硬又脆.\"]},ench:[{id:0,lvl:10}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "backstab:gold_dagger",
+    "unitWorth": 300,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"要拿贵金属对抗不死族.\"]},ench:[{id:17,lvl:3}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "backstab:iron_dagger",
+    "unitWorth": 500,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"打完就跑.\"]},ench:[{id:19,lvl:2}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "backstab:diamond_dagger",
+    "unitWorth": 900,
+    "weight": 50,
+    "nbt_data": "{display:{Lore:[\"得想办法把这个去掉...\"]},ench:[{id:71,lvl:1}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  },
+  {
+    "content": "minecraft:bow",
+    "unitWorth": 1300,
+    "weight": 100,
+    "nbt_data": "{display:{Lore:[\"火，炎，焱.\"]},ench:[{id:50,lvl:1}]}",
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
+  }
+]

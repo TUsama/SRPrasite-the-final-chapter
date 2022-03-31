@@ -1,0 +1,12 @@
+{
+	"name": "weakness_2",
+	"potion": "minecraft:weakness",
+	"amplifier": 0,
+	"minimum": 70,
+	"maximum": 90,
+	"detect": "any",
+	"nutrients": [                   
+		"parasite_posion" 
+	],                
+	"enabled": true
+}

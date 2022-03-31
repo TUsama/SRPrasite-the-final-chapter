@@ -1,0 +1,12 @@
+{
+	"name": "hunger_sugar",
+	"potion": "minecraft:hunger",
+	"amplifier": 0,
+	"minimum": 90,
+	"maximum": 100,
+	"detect": "any",
+	"nutrients": [                   
+		"sugar" 
+	],                
+	"enabled": true
+}

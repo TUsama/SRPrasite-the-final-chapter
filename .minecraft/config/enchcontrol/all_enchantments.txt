@@ -1,0 +1,55 @@
+mod name - enchantment name - enchantment registry name
+Future MC - Channeling - futuremc:channeling
+Future MC - Impaling - futuremc:impaling
+Future MC - Loyalty - futuremc:loyalty
+Future MC - Riptide - futuremc:riptide
+Living Enchantment - Living - livingenchantment:enchantment.living
+Minecraft - Unbreaking - minecraft:unbreaking
+Minecraft - Sweeping Edge - minecraft:sweeping
+Minecraft - Protection - minecraft:protection
+Minecraft - Curse of Vanishing - minecraft:vanishing_curse
+Minecraft - Thorns - minecraft:thorns
+Minecraft - Looting - minecraft:looting
+Minecraft - Projectile Protection - minecraft:projectile_protection
+Minecraft - Smite - minecraft:smite
+Minecraft - Fire Aspect - minecraft:fire_aspect
+Minecraft - Infinity - minecraft:infinity
+Minecraft - Feather Falling - minecraft:feather_falling
+Minecraft - Aqua Affinity - minecraft:aqua_affinity
+Minecraft - Sharpness - minecraft:sharpness
+Minecraft - Silk Touch - minecraft:silk_touch
+Minecraft - Power - minecraft:power
+Minecraft - Depth Strider - minecraft:depth_strider
+Minecraft - Knockback - minecraft:knockback
+Minecraft - Efficiency - minecraft:efficiency
+Minecraft - Mending - minecraft:mending
+Minecraft - Respiration - minecraft:respiration
+Minecraft - Frost Walker - minecraft:frost_walker
+Minecraft - Fire Protection - minecraft:fire_protection
+Minecraft - Fortune - minecraft:fortune
+Minecraft - Curse of Binding - minecraft:binding_curse
+Minecraft - Luck of the Sea - minecraft:luck_of_the_sea
+Minecraft - Punch - minecraft:punch
+Minecraft - Flame - minecraft:flame
+Minecraft - Lure - minecraft:lure
+Minecraft - Blast Protection - minecraft:blast_protection
+Minecraft - Bane of Arthropods - minecraft:bane_of_arthropods
+Nyx - Lunar Edge - nyx:lunar_edge
+Nyx - Lunar Shield - nyx:lunar_shield
+OverLast - Parasites Killer - overlast:srpkiller
+Spartan Shields - Spikes - spartanshields:ssenchspikes
+V-Tweaks - Imperishable - vtweaks:imperishable
+Wall-Jump! - Speed-Boost - walljump:speedboost
+Wall-Jump! - Wall-Jump! - walljump:walljump
+Wall-Jump! - Double-Jump - walljump:doublejump
+Wonderful Enchantments - Enchantment Against Humanity - wonderful_enchantments:human_slayer
+Wonderful Enchantments - Smelter - wonderful_enchantments:smelter
+Wonderful Enchantments - Phoenix Dive - wonderful_enchantments:phoenix_dive
+Wonderful Enchantments - Vitality - wonderful_enchantments:vitality
+Wonderful Enchantments - Curse of Fatigue - wonderful_enchantments:fatigue_curse
+Wonderful Enchantments - Immortality - wonderful_enchantments:immortality
+Wonderful Enchantments - Dodge - wonderful_enchantments:dodge
+Wonderful Enchantments - Curse of Slowness - wonderful_enchantments:slowness_curse
+Wonderful Enchantments - Enlightenment - wonderful_enchantments:enlightenment
+Wonderful Enchantments - Vengeance of Pufferfish - wonderful_enchantments:pufferfish_vengeance
+Wonderful Enchantments - Fishing Fanatic - wonderful_enchantments:fishing_fanatic

@@ -1,0 +1,32 @@
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] CustomSkinLoader 14.10a
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] DataDir: D:\mc\game\MultiMC\instances\1.12.22\.minecraft\CustomSkinLoader
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] Minecraft: null()
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] Config File: D:\mc\game\MultiMC\instances\1.12.22\.minecraft\CustomSkinLoader\CustomSkinLoader.json
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] Try to load config.
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] Successfully load config.
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] version : 14.10
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] enableDynamicSkull : true
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] enableTransparentSkin : true
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] ignoreHttpsCertificate : false
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] forceLoadAllTextures : false
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] enableCape : true
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] cacheExpiry : 30
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] enableUpdateSkull : false
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] enableLocalProfileCache : false
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] enableCacheAutoClean : false
+[2022-03-31 13:23:38] [pool-4-thread-1 INFO] loadList : 6
+[2022-03-31 13:23:38] [Clefal INFO] Loading Clefal's profile.
+[2022-03-31 13:23:38] [Clefal INFO] 1/6 Try to load profile from 'Mojang'.
+[2022-03-31 13:23:38] [Clefal INFO] Default profile will be used.
+[2022-03-31 13:23:38] [Clefal INFO] Clefal's profile loaded.
+[2022-03-31 13:23:38] [Clefal INFO] (SkinUrl: http://textures.minecraft.net/texture/e0ac853dc71c4365267c231ac8a69cfe06876a4de4df5b118563e82a0a792ab8 , Model: default , CapeUrl: http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933  , Expiry: 1648704251)
+[2022-03-31 13:27:07] [Clefal INFO] Loading Clefal's profile.
+[2022-03-31 13:27:07] [Clefal INFO] 1/6 Try to load profile from 'Mojang'.
+[2022-03-31 13:27:07] [Clefal INFO] Default profile will be used.
+[2022-03-31 13:27:07] [Clefal INFO] Clefal's profile loaded.
+[2022-03-31 13:27:07] [Clefal INFO] (SkinUrl: http://textures.minecraft.net/texture/e0ac853dc71c4365267c231ac8a69cfe06876a4de4df5b118563e82a0a792ab8 , Model: default , CapeUrl: http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933  , Expiry: 1648704457)
+[2022-03-31 13:32:30] [Clefal INFO] Loading Clefal's profile.
+[2022-03-31 13:32:30] [Clefal INFO] 1/6 Try to load profile from 'Mojang'.
+[2022-03-31 13:32:30] [Clefal INFO] Default profile will be used.
+[2022-03-31 13:32:30] [Clefal INFO] Clefal's profile loaded.
+[2022-03-31 13:32:30] [Clefal INFO] (SkinUrl: http://textures.minecraft.net/texture/e0ac853dc71c4365267c231ac8a69cfe06876a4de4df5b118563e82a0a792ab8 , Model: default , CapeUrl: http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933  , Expiry: 1648704783)

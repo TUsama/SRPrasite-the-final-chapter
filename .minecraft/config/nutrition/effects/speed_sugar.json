@@ -1,0 +1,12 @@
+{
+	"name": "speed_sugar",
+	"potion": "minecraft:speed",
+	"amplifier": 0,
+	"minimum": 70,
+	"maximum": 90,
+	"detect": "any",
+	"nutrients": [                   
+		"sugar" 
+	],                
+	"enabled": true
+}

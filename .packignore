@@ -1,0 +1,12 @@
+.minecraft/.mixin.out
+.minecraft/CustomSkinLoader
+.minecraft/ModularMovements
+.minecraft/crafttweaker.log
+.minecraft/fontfiles
+.minecraft/icon.png
+.minecraft/journeymap
+.minecraft/logs
+.minecraft/saves
+.minecraft/screenshots
+.minecraft/usercache.json
+.minecraft/usernamecache.json
