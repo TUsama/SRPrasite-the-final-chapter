@@ -1,4 +1,4 @@
-.minecraft/
+.minecraft/**
 !/.minecraft/mods/
 !/.minecraft/config/
 !/.minecraft/scripts/
