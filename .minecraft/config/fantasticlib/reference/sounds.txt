@@ -547,6 +547,8 @@ minecraft:ui.toast.out
 minecraft:ui.toast.challenge_complete
 minecraft:weather.rain
 minecraft:weather.rain.above
+animania:zap
+animania:combo
 zombieawareness:alert
 zombieawareness:target
 zombieawareness:investigate
