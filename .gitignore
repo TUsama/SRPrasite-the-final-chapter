@@ -1,2 +1,5 @@
-.minecraft/logs/
-.minecraft/journeymap/
+.minecraft/
+!/.minecraft/mods/
+!/.minecraft/config/
+!/.minecraft/scripts/
+
