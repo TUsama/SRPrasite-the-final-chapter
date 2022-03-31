@@ -1,5 +1,0 @@
-#List of Hidden Players
-clefal:false
-a_pi:false
-api:false
-shan_ai:false
