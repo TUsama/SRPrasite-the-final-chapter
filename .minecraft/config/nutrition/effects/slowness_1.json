@@ -1,0 +1,12 @@
+{
+	"name": "slowness_1",
+	"potion": "minecraft:slowness",
+	"amplifier": 0,
+	"minimum": 60,
+	"maximum": 70,
+	"detect": "any",
+	"nutrients": [                   
+		"parasite_posion" 
+	],                
+	"enabled": true
+}
