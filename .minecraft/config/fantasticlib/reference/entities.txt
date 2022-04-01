@@ -82,12 +82,6 @@ minecraft:parrot
 minecraft:villager
 minecraft:ender_crystal
 quark:seat
-quark:pickarang
-quark:arrow_ender
-quark:arrow_explosive
-quark:arrow_torch
-quark:dragon_breath_bottle
-quark:soul_powder
 quark:chest_passenger
 quark:flat_item_frame
 quark:leash_knot
@@ -98,6 +92,12 @@ quark:foxhound
 quark:dweller
 quark:ashen
 quark:wraith
+quark:pickarang
+quark:arrow_ender
+quark:arrow_explosive
+quark:arrow_torch
+quark:dragon_breath_bottle
+quark:soul_powder
 testdummy:dummy
 testdummy:floating_number
 testdummy:floating_number_dps

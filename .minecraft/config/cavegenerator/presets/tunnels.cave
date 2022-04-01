@@ -1,0 +1,62 @@
+# ----------------------------------------------------------- #
+# ########################################################### #
+#                 ### tunnels.cave Info ###                   #
+# ########################################################### #
+#   This preset is designed to demonstrate a basic use case   #
+# for this mod. It converts the normal, winding tunnels into  #
+# long, straight tunnels with some decorations.               #
+# ----------------------------------------------------------- #
+{
+  $VANILLA: "ALL" # Default ravines and lava settings.
+  enabled: false
+  wallDecorators: [
+    {
+      states: dirt
+      height: [ 20, 40 ]
+      matchers: stone
+      directions: down
+      placement: embed
+      integrity: 0.15
+    }
+    {
+      states: gravel
+      height: [ 20, 40 ]
+      matchers: [ "stone", "dirt" ]
+      directions: down
+      placement: embed
+      integrity: 0.15
+    }
+  ]
+  tunnels: {
+    originHeight: [ 27, 33 ]
+    # Most tunnels spawn alone.
+    systemChance: 0.001
+    noiseYReduction: false
+    rooms: {
+      scale: 7
+      stretch: 0.6
+    }
+    dYaw: {
+      factor: 0.9
+      randFactor: 0.3
+      startVal: 0
+    }
+    dPitch: {
+      factor: 0.9
+      randFactor: 0.1
+      startVal: 0
+    }
+    scale: {
+      randFactor: 0.25
+      startVal: 4
+      startValRandFactor: 1
+    }
+    pitch: {
+      startValRandFactor: 0.05
+    }
+    stretch: {
+      randFactor: 0.1
+      startVal: 0.5
+    }
+  }
+}
