@@ -9,7 +9,7 @@
 .minecraft/fontfiles
 .minecraft/journeymap
 .minecraft/local
-
+.minecraft/logs
 .minecraft/replay_recordings
 .minecraft/resourcepacks
 .minecraft/saves
@@ -28,5 +28,6 @@
 .minecraft/usernamecache.json
 .minecraft/WailaErrorOutput.txt
 .packignore
-instance.cfg
+/instance.cfg
 mmc-pack.json
+.minecraft/config/splash.properties
