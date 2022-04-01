@@ -169,8 +169,8 @@ blockWoolBrown
 blockWoolGreen
 blockWoolRed
 blockWoolBlack
-materialStoneTool
 mushroomAny
+materialStoneTool
 stoneBasalt
 stoneMarble
 stoneLimestone
@@ -188,6 +188,8 @@ blockNetherite
 ingotNetherite
 ingotAncientDebris
 oreAncientDebris
+stonePolished
+plankStained
 gemEnderBiotite
 stoneBasaltPolished
 stoneMarblePolished
@@ -198,8 +200,6 @@ stoneBrimstonePolished
 stonePermafrostPolished
 blockPrismarineElderBrick
 blockPrismarineElderDark
-stonePolished
-plankStained
 bookshelf
 bookshelfOak
 bookshelfSpruce
