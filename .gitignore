@@ -1,6 +1,6 @@
+natives/
 .minecraft/.mixin.out
 .minecraft/.replay_cache
-
 .minecraft/coremods
 .minecraft/crash-reports
 .minecraft/CustomSkinLoader
@@ -31,3 +31,4 @@
 /instance.cfg
 mmc-pack.json
 .minecraft/config/splash.properties
+.minecraft/config/InvTweaks/InvTweaks.cfg
