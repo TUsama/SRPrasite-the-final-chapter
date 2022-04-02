@@ -25,7 +25,7 @@ var hideandremove = [
     <nocubessrpaddon:flamethrowerbarrel>,
     <nocubessrpaddon:flamethrowergrip>,
     <nocubessrpaddon:flamethrowerpart>
-
+	<nocubessrpaddon:pestillentknife>
 
 ] as IItemStack[];
 
