@@ -26,7 +26,7 @@ var hideandremove = [
     <nocubessrpaddon:flamethrowergrip>,
     <nocubessrpaddon:flamethrowerpart>
 	<nocubessrpaddon:pestillentknife>
-
+	<quark:pickarang>
 ] as IItemStack[];
 
 for item in hideandremove {
