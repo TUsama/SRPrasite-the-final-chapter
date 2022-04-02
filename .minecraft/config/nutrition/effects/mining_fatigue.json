@@ -5,5 +5,6 @@
 	"minimum": 0,
 	"maximum": 20,
 	"detect": "average",
+	"particles": "transparent",
 	"enabled": true
 }

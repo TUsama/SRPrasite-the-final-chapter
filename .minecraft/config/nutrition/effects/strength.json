@@ -2,8 +2,14 @@
 	"name": "strength",
 	"potion": "minecraft:strength",
 	"amplifier": 0,
-	"minimum": 90,
+	"minimum": 85,
 	"maximum": 100,
-	"detect": "average",
+	"detect": "cumulative",
+	"nutrients": [                   
+		"protein",
+		"dairy"
+	],     
+	"cumulative_modifier": 1,
+	"particles": "transparent",           
 	"enabled": true
 }

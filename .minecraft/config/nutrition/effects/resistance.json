@@ -2,8 +2,17 @@
 	"name": "resistance",
 	"potion": "minecraft:resistance",
 	"amplifier": 0,
-	"minimum": 50,
+	"minimum": 60,
 	"maximum": 100,
-	"detect": "average",
+	"detect": "cumulative",
+	"nutrients": [                   
+		"fruit",
+		"grain",
+		"protein",
+		"vegetable",
+		"dairy"
+	],                
+	"cumulative_modifier": 0.4,
+	"particles": "transparent",
 	"enabled": true
 }

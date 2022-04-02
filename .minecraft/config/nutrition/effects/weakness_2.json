@@ -3,10 +3,12 @@
 	"potion": "minecraft:weakness",
 	"amplifier": 0,
 	"minimum": 70,
-	"maximum": 90,
+	"maximum": 100,
 	"detect": "any",
 	"nutrients": [                   
 		"parasite_posion" 
-	],                
+	],              
+	"particles": "transparent",           
+
 	"enabled": true
 }

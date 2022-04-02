@@ -8,5 +8,6 @@
 	"nutrients": [                   
 		"parasite_posion" 
 	],                
+	"particles": "transparent",
 	"enabled": true
 }
