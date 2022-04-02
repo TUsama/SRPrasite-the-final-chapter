@@ -11,6 +11,7 @@
 		],                        
 		"items": [                
 			"minecraft:rotten_flesh" ,
+			"overlast:dumpling",
 			"nocubessrpaddon:pestbread",
 			"nocubessrpaddon:dreadleaf",
 			"nocubessrpaddon:redflesh",

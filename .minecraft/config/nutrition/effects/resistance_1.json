@@ -1,9 +1,9 @@
 {
-	"name": "resistance",
+	"name": "resistance_1",
 	"potion": "minecraft:resistance",
-	"amplifier": 0,
-	"minimum": 60,
-	"maximum": 80,
+	"amplifier": 1,
+	"minimum": 80,
+	"maximum": 100,
 	"detect": "average",
 	"nutrients": [                   
 		"fruit",
