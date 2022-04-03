@@ -25,19 +25,7 @@ var hideandremove = [
     <nocubessrpaddon:flamethrowerbarrel>,
     <nocubessrpaddon:flamethrowergrip>,
     <nocubessrpaddon:flamethrowerpart>,
-	<quark:pickarang>,
-    <nyx:meteor_hoe>,
-	<nyx:meteor_axe>,
-	<nyx:meteor_chest>,
-	<nyx:meteor_bow>,
-	<nyx:meteor_pickaxe>,
-	<nyx:meteor_shovel>,
-	<nyx:meteor_sword>,
-	<nyx:meteor_helm>,
-	<nyx:meteor_pants>,
-	<nyx:meteor_hammer>,
-	<nyx:meteor_finder>,
-	<nyx:meteor_boots>
+	<quark:pickarang>
 ] as IItemStack[];
 
 for item in hideandremove {
