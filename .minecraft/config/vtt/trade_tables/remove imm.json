@@ -1,17 +1,39 @@
 {
     "Profession": "minecraft:librarian",
-    "Career": "cartographer",
+    "Career": "librarian",
     "Offers": {
         "Recipes": [
             {
-                "action": "remove",
+                "action": "remove", "CareerLevel": 1,
                 "buy": {
                     "id": "minecraft:emerald"
                 },
                 "sell": {
-                    "id": "minecraft:enchanted_book.withTag({StoredEnchantments: [{lvl: 1 as short, id: 43 as short}]})"
+                    "id": "minecraft:enchanted_book",
+                    "Count": 1,
+					"tag": {
+						"StoredEnchantments": {
+                            "lvl": 1,
+                            "id": 43
+                        }
+                    }
+                }
+            },
+            {
+                "action": "remove","CareerLevel": 1,
+                "buy": {
+                    "id": "minecraft:emerald"
                 },
-                "CareerLevel": 1
+                "sell": {
+                    "id": "minecraft:enchanted_book",
+                    "Count": 1,
+					"tag": {
+						"StoredEnchantments": {
+                            "lvl": 1,
+                            "id": 70
+                        }
+                    }
+                }
             }
         ]
     }
