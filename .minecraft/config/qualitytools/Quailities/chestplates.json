@@ -167,14 +167,14 @@
             "operation": 0
           },
           {
-            "name": "potioncore.damageResistancer",
+            "name": "potioncore.damageResistance",
             "amount": 0.1,
             "operation": 2
           }
         ]
       },
       {
-        "name": "quality.gaint's.name",
+        "name": "quality.gaint.name",
         "color": "light_purple",
         "weight": 2,
         "attributes": [

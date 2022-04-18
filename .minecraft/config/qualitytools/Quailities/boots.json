@@ -180,7 +180,7 @@
         ]
       },
       {
-        "name": "quality.spider's.name",
+        "name": "quality.spider.name",
         "color": "light_purple",
         "weight": 2,
         "attributes": [
@@ -197,7 +197,7 @@
         ]
       },
       {
-        "name": "quality.The speed of sound.name",
+        "name": "quality.The_speed_of_sound.name",
         "color": "light_purple",
         "weight": 2,
         "attributes": [
