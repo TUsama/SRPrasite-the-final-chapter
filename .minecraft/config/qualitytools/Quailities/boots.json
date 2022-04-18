@@ -70,7 +70,7 @@
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 1,
             "operation": 0
           },
           {
@@ -87,7 +87,7 @@
         "attributes": [
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 1.5,
             "operation": 0
           }
         ]
@@ -99,19 +99,24 @@
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 1,
             "operation": 0
           }
         ]
       },
       {
-        "name": "quality.arcane.name",
-        "color": "blue",
-        "weight": 10,
+        "name": "quality.tenacity.name",
+        "color": "aqua",
+        "weight": 5,
         "attributes": [
           {
-            "name": "potioncore.magicShielding",
-            "amount": 1,
+            "name": "generic.armor",
+            "amount": 1.5,
+            "operation": 0
+          },
+          {
+            "name": "generic.armorToughness",
+            "amount": 2,
             "operation": 0
           }
         ]
@@ -123,8 +128,30 @@
         "attributes": [
           {
             "name": "potioncore.stepHeight",
-            "amount": 0.5,
+            "amount": 1.5,
             "operation": 0
+          },
+          {
+            "name": "generic.movementSpeed",
+            "amount": 0.05,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.taller.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "potioncore.stepHeight",
+            "amount": 2.5,
+            "operation": 0
+          },
+          {
+            "name": "generic.movementSpeed",
+            "amount": 0.1,
+            "operation": 2
           }
         ]
       },
@@ -135,24 +162,70 @@
         "attributes": [
           {
             "name": "generic.movementSpeed",
-            "amount": 0.1,
+            "amount": 0.2,
 			   "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.swift.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.movementSpeed",
+            "amount": 0.3,
+			   "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.spider's.name",
+        "color": "light_purple",
+        "weight": 2,
+        "attributes": [
+          {
+            "name": "potioncore.stepHeight",
+            "amount": 4.5,
+            "operation": 0
+          },
+          {
+            "name": "generic.movementSpeed",
+            "amount": 0.1,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.The speed of sound.name",
+        "color": "light_purple",
+        "weight": 2,
+        "attributes": [
+          {
+            "name": "generic.movementSpeed",
+            "amount": 0.4,
+            "operation": 2
+          },
+          {
+            "name": "potioncore.stepHeight",
+            "amount": 0.5,
+            "operation": 0
           }
         ]
       },
       {
         "name": "quality.masterful.name",
         "color": "light_purple",
-        "weight": 5,
+        "weight": 2,
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 1.5,
             "operation": 0
           },
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 2,
             "operation": 0
           },
           {
@@ -162,7 +235,7 @@
           },
           {
             "name": "generic.movementSpeed",
-            "amount": 0.1,
+            "amount": 0.2,
             "operation": 2
           }
         ]

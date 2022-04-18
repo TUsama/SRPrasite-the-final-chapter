@@ -38,7 +38,7 @@
         "attributes": [
           {
             "name": "generic.luck",
-            "amount": 0.5,
+            "amount": 1,
             "operation": 0
           }
         ]

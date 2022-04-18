@@ -17,7 +17,7 @@
       {
         "name": "quality.crumbling.name",
         "color": "dark_red",
-        "weight": 8,
+        "weight": 10,
         "attributes": [
           {
             "name": "generic.armor",
@@ -88,7 +88,7 @@
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 2,
             "operation": 0
           },
           {
@@ -105,7 +105,7 @@
         "attributes": [
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 3,
             "operation": 0
           }
         ]
@@ -117,19 +117,7 @@
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
-            "operation": 0
-          }
-        ]
-      },
-      {
-        "name": "quality.arcane.name",
-        "color": "blue",
-        "weight": 10,
-        "attributes": [
-          {
-            "name": "potioncore.magicShielding",
-            "amount": 1,
+            "amount": 2,
             "operation": 0
           }
         ]
@@ -143,23 +131,94 @@
             "name": "generic.knockbackResistance",
             "amount": 0.5,
             "operation": 0
+          },
+          {
+            "name": "generic.armor",
+            "amount": 1.5,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.tenacity.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.armorToughness",
+            "amount": 3,
+            "operation": 0
+          },
+          {
+            "name": "generic.armor",
+            "amount": 2.5,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.hardest.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.armorToughness",
+            "amount": 3,
+            "operation": 0
+          },
+          {
+            "name": "potioncore.damageResistancer",
+            "amount": 0.1,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.gaint's.name",
+        "color": "light_purple",
+        "weight": 2,
+        "attributes": [
+          {
+            "name": "generic.armor",
+            "amount": 6,
+            "operation": 0
+          },
+          {
+            "name": "generic.armorToughness",
+            "amount": 9,
+            "operation": 0
+          },
+          {
+            "name": "potioncore.damageResistance",
+            "amount": 0.1,
+            "operation": 2
+          },
+          {
+            "name": "generic.movementSpeed",
+            "amount": -0.1,
+            "operation": 2
           }
         ]
       },
       {
         "name": "quality.masterful.name",
         "color": "light_purple",
-        "weight": 5,
+        "weight": 2,
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 4,
             "operation": 0
           },
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 6,
             "operation": 0
+          },
+          {
+            "name": "potioncore.damageResistance",
+            "amount": 0.08,
+            "operation": 2
           },
           {
             "name": "generic.knockbackResistance",

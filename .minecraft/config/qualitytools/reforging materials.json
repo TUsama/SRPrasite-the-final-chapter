@@ -11,6 +11,11 @@
         "item": "minecraft:nether_star"
     }
   },
+  {"tool": "any",
+    "material": {
+      "item": "minecraft:diamond"
+    }
+  },
   {
     "tool": {
         "item": "minecraft:bow"

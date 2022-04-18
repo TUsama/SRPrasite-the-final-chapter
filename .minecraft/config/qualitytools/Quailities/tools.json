@@ -150,11 +150,11 @@
       {
         "name": "quality.broad.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 12,
         "attributes": [
           {
             "name": "generic.attackDamage",
-            "amount": 0.1,
+            "amount": 0.15,
             "operation": 2
           },
           {
@@ -172,7 +172,7 @@
       {
         "name": "quality.thin.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 12,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -181,7 +181,7 @@
           },
           {
             "name": "generic.attackSpeed",
-            "amount": 0.1,
+            "amount": 0.15,
             "operation": 2
           }
         ]
@@ -189,11 +189,11 @@
       {
         "name": "quality.pokey.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 12,
         "attributes": [
           {
             "name": "generic.attackDamage",
-            "amount": 0.05,
+            "amount": 0.1,
             "operation": 2
           },
           {
@@ -206,7 +206,7 @@
       {
         "name": "quality.vicious.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 12,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -227,7 +227,12 @@
         "attributes": [
           {
             "name": "generic.reachDistance",
-            "amount": 0.5,
+            "amount": 1,
+            "operation": 0
+          },
+          {
+            "name": "generic.attackReach",
+            "amount": 1,
             "operation": 0
           }
         ]
@@ -239,7 +244,7 @@
         "attributes": [
           {
             "name": "generic.attackDamage",
-            "amount": 0.1,
+            "amount": 0.15,
             "operation": 2
           }
         ]
@@ -250,43 +255,9 @@
         "weight": 10,
         "attributes": [
           {
-            "name": "generic.attackDamage",
-            "amount": 0.1,
-            "operation": 2
-          },
-          {
-            "name": "generic.attackSpeed",
-            "amount": 0.1,
-            "operation": 2
-          }
-        ]
-      },
-      {
-        "name": "quality.graceful.name",
-        "color": "aqua",
-        "weight": 10,
-        "attributes": [
-          {
             "name": "potioncore.digSpeed",
-            "amount": 0.15,
+            "amount": 0.2,
             "operation": 2
-          },
-          {
-            "name": "generic.attackSpeed",
-            "amount": 0.15,
-            "operation": 2
-          }
-        ]
-      },
-      {
-        "name": "quality.sweeping.name",
-        "color": "aqua",
-        "weight": 10,
-        "attributes": [
-          {
-            "name": "generic.reachDistance",
-            "amount": 0.5,
-            "operation": 0
           },
           {
             "name": "generic.attackSpeed",
@@ -296,29 +267,135 @@
         ]
       },
       {
-        "name": "quality.legendary.name",
-        "color": "light_purple",
+        "name": "quality.graceful.name",
+        "color": "aqua",
         "weight": 5,
         "attributes": [
           {
-            "name": "generic.attackDamage",
-            "amount": 0.15,
-            "operation": 2
-          },
-          {
             "name": "potioncore.digSpeed",
-            "amount": 0.1,
+            "amount": 0.25,
             "operation": 2
-          },
-          {
-            "name": "generic.reachDistance",
-            "amount": 0.5,
-            "operation": 0
           },
           {
             "name": "generic.attackSpeed",
             "amount": 0.1,
             "operation": 2
+          },
+          {
+            "name": "generic.attackDamage",
+            "amount": 0.15,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.folating.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.reachDistance",
+            "amount": 2,
+            "operation": 0
+          },
+          {
+            "name": "generic.attackReach",
+            "amount": 2,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.sweeping.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.reachDistance",
+            "amount": 1,
+            "operation": 0
+          },
+          {
+            "name": "generic.attackSpeed",
+            "amount": 0.2,
+            "operation": 2
+          },
+          {
+            "name": "generic.attackReach",
+            "amount": 1,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.legendary.name",
+        "color": "light_purple",
+        "weight": 2,
+        "attributes": [
+          {
+            "name": "generic.attackDamage",
+            "amount": 0.20,
+            "operation": 2
+          },
+          {
+            "name": "potioncore.digSpeed",
+            "amount": 0.3,
+            "operation": 2
+          },
+          {
+            "name": "generic.reachDistance",
+            "amount": 1,
+            "operation": 0
+          },
+          {
+            "name": "generic.attackSpeed",
+            "amount": 0.2,
+            "operation": 2
+          },
+          {"name": "generic.attackReach",
+            "amount": 1,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.force.name",
+        "color": "light_purple",
+        "weight": 2,
+        "attributes": [
+          {
+            "name": "generic.reachDistance",
+            "amount": 4,
+            "operation": 0
+          },
+          {
+            "name": "generic.attackReach",
+            "amount": 4,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.judicial.name",
+        "color": "light_purple",
+        "weight": 2,
+        "attributes": [
+          {
+            "name": "generic.attackDamage",
+            "amount": 0.4,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name":"quality.masochistic.name",
+        "color":"light_purple",
+        "weight":2,
+        "attributes":[
+          {
+            "name":"generic.attackSpeed",
+            "amount":0.45,
+            "operation":2
           }
         ]
       }

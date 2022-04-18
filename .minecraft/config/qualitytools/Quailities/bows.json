@@ -20,7 +20,7 @@
       {
         "name": "quality.cracked.name",
         "color": "dark_gray",
-        "weight": 5,
+        "weight": 6,
         "attributes": [
           {
             "name": "potioncore.projectileDamage",
@@ -52,19 +52,31 @@
         "attributes": [
           {
             "name": "potioncore.projectileDamage",
-            "amount": 0.05,
+            "amount": 0.1,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.exquisite.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "potioncore.projectileDamage",
+            "amount": 0.2,
             "operation": 2
           }
         ]
       },
       {
         "name": "quality.powerful.name",
-        "color": "aqua",
-        "weight": 5,
+        "color": "light_purple",
+        "weight": 2,
         "attributes": [
           {
             "name": "potioncore.projectileDamage",
-            "amount": 0.1,
+            "amount": 0.3,
             "operation": 2
           }
         ]

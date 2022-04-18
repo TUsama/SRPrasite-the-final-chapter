@@ -78,7 +78,7 @@
         "attributes": [
           {
             "name": "generic.luck",
-            "amount": -0.2,
+            "amount": -0.5,
             "operation": 0
           }
         ]
@@ -94,15 +94,15 @@
         "attributes": [
           {
             "name": "generic.luck",
-            "amount": 0.2,
+            "amount": 1,
             "operation": 0
           }
         ]
       },
       {
         "name": "quality.healthy.name",
-        "color": "blue",
-        "weight": 10,
+        "color": "aqua",
+        "weight": 5,
         "attributes": [
           {
             "name": "generic.maxHealth",
@@ -125,20 +125,21 @@
       },
       {
         "name": "quality.speedy.name",
-        "color": "blue",
-        "weight": 10,
+        "color": "aqua",
+        "weight": 5,
         "attributes": [
           {
             "name": "generic.movementSpeed",
-            "amount": 0.05,
+            "amount": 0.1,
             "operation": 2
           }
         ]
       },
+      
       {
         "name": "quality.springy.name",
-        "color": "blue",
-        "weight": 10,
+        "color": "aqua",
+        "weight": 5,
         "attributes": [
           {
             "name": "potioncore.jumpHeight",
@@ -154,7 +155,7 @@
         "attributes": [
           {
             "name": "potioncore.digSpeed",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           }
         ]
@@ -166,7 +167,7 @@
         "attributes": [
           {
             "name": "generic.attackSpeed",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           }
         ]
@@ -190,7 +191,7 @@
         "attributes": [
           {
             "name": "potioncore.magicDamage",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           }
         ]
@@ -202,7 +203,7 @@
         "attributes": [
           {
             "name": "potioncore.projectileDamage",
-            "amount": 0.03,
+            "amount": 0.04,
             "operation": 2
           }
         ]
@@ -214,7 +215,43 @@
         "attributes": [
           {
             "name": "generic.attackDamage",
-            "amount": 0.03,
+            "amount": 0.04,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.sheltered.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "potioncore.damageResistance",
+            "amount": 0.06,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.Bloodthirsty.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.attackDamage",
+            "amount": 0.07,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "quality.hawkeye's.name",
+        "color": "aqua",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "potioncore.projectileDamage",
+            "amount": 0.07,
             "operation": 2
           }
         ]
@@ -222,28 +259,40 @@
       {
         "name": "quality.graceful.name",
         "color": "aqua",
-        "weight": 10,
+        "weight": 5,
         "attributes": [
           {
             "name": "generic.attackSpeed",
-            "amount": 0.03,
+            "amount": 0.08,
             "operation": 2
           },
           {
             "name": "potioncore.digSpeed",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           }
         ]
       },
       {
-        "name": "quality.athletic.name",
+        "name": "quality.luckiest.name",
         "color": "aqua",
-        "weight": 10,
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.luck",
+            "amount": 2,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "quality.athletic.name",
+        "color": "light_purple",
+        "weight": 2,
         "attributes": [
           {
             "name": "generic.movementSpeed",
-            "amount": 0.05,
+            "amount": 0.1,
             "operation": 2
           },
           {
@@ -256,21 +305,26 @@
       {
         "name": "quality.punishing.name",
         "color": "light_purple",
-        "weight": 5,
+        "weight": 2,
         "attributes": [
           {
+            "name": "generic.attackSpeed",
+            "amount": 0.05,
+            "operation": 2
+          },
+          {
             "name": "generic.attackDamage",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           },
           {
             "name": "potioncore.projectileDamage",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           },
           {
             "name": "potioncore.magicDamage",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           }
         ]
@@ -278,7 +332,7 @@
       {
         "name": "quality.undying.name",
         "color": "light_purple",
-        "weight": 5,
+        "weight": 2,
         "attributes": [
           {
             "name": "generic.maxHealth",
@@ -287,7 +341,7 @@
           },
           {
             "name": "potioncore.damageResistance",
-            "amount": 0.03,
+            "amount": 0.05,
             "operation": 2
           },
           {
