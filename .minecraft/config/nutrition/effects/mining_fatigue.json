@@ -6,5 +6,10 @@
 	"maximum": 20,
 	"detect": "average",
 	"particles": "transparent",
+	"nutrients": [                   
+		"grain",
+		"protein",
+		"vegetable"
+	],
 	"enabled": true
 }
