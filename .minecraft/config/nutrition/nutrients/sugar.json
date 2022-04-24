@@ -7,11 +7,12 @@
 		"oredict": [
 		],
 		"items": [
+			"nyx:lunar_water_bottle",
 			"minecraft:pumpkin_pie",
 			"minecraft:cake",
 			"overlast:dumpling",
-			"minecraftfuture:honey_bottle",
-			"minecraftfuture:sweetberry",
+			"futuremc:honey_bottle",
+			"futuremc:sweet_berries",
 			"minecraft:beetroot_soup",
 			"minecraft:beetroot"		
 		]

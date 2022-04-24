@@ -25,7 +25,13 @@ var hideandremove = [
     <nocubessrpaddon:flamethrowerbarrel>,
     <nocubessrpaddon:flamethrowergrip>,
     <nocubessrpaddon:flamethrowerpart>,
-	<quark:pickarang>
+	<quark:pickarang>,
+    <bountifulbaubles:amuletcross>,
+    <bountifulbaubles:ringflywheel>,
+    <bountifulbaubles:ringflywheel>,
+    <bountifulbaubles:ringflywheeladvanced>,
+    <bountifulbaubles:ringflywheeladvanced>
+
 ] as IItemStack[];
 
 for item in hideandremove {

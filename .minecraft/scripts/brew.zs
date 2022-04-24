@@ -52,3 +52,6 @@ brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:absorption"}), <
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "quark:resistance"}), <minecraft:quartz>, <med:painkillers>);
 //褪黑素
 brewing.addBrew(<med:steroids>, <minecraft:fermented_spider_eye>, <med:melatonin>);
+//牛奶三件套
+brewing.addBrew(<birdsfoods:bottle_of_milk>, <minecraft:gunpowder>, <bottledmilk:milk_bottle_splash>);
+brewing.addBrew(<birdsfoods:bottle_of_milk>, <minecraft:dragon_breath>, <bottledmilk:milk_bottle_lingering>);

@@ -1,6 +1,8 @@
 //This file was created via CT-GUI! Editing it is not advised!
 //Don't touch me!
 //#Remove
+recipes.remove(<bottledmilk:milk_bottle_lingering>);
+recipes.remove(<bottledmilk:milk_bottle_splash>);
 recipes.remove(<trident:trident>);
 recipes.remove(<nocubessrpaddon:pestillentscythe>);
 recipes.remove(<nocubessrpaddon:pestillentknife>);
