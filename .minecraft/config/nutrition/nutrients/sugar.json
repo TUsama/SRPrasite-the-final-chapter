@@ -5,6 +5,7 @@
 	"enabled": true,
 	"food": {
 		"oredict": [
+			"SweatFood"
 		],
 		"items": [
 			"nyx:lunar_water_bottle",
@@ -14,7 +15,7 @@
 			"futuremc:honey_bottle",
 			"futuremc:sweet_berries",
 			"minecraft:beetroot_soup",
-			"minecraft:beetroot"		
+			"minecraft:beetroot"
 		]
 	}
 }

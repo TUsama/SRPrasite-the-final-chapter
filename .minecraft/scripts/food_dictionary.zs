@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 
 
 
-val oreFlourFood = <ore:FlourFood>;
+var oreFlourFood = <ore:FlourFood>;
 
 
 var FlourFood = [
@@ -173,7 +173,7 @@ oreFlourFood.add(item);
 
 }
 
-val oreMeatFood = <ore:MeatFood>;
+var oreMeatFood = <ore:MeatFood>;
 
 var MeatFood = [
     <birdsfoods:sliced_lamb>,
@@ -273,3 +273,201 @@ for item in MeatFood {
 }
 
 
+var oreVeggieFood = <ore:VeggieFood>;
+
+var VeggieFood = [
+    <birdsfoods:dandelion_salad>,
+    <birdsfoods:spring_salad>,
+    <birdsfoods:cobb_salad>,
+    <birdsfoods:candied_beets>,
+    <birdsfoods:veggie_soba>,
+    <birdsfoods:veggie_taco>,
+    <birdsfoods:spiced_veggies>,
+    <birdsfoods:ancho_veggies>,
+    <birdsfoods:cheesy_veggie_taco>,
+    <birdsfoods:veggie_taco_with_cream>,
+    <birdsfoods:cheesy_veggie_taco_with_cream>,
+    <birdsfoods:veggie_taco_with_greens>,
+    <birdsfoods:cheesy_veggie_taco_with_greens>,
+    <birdsfoods:veggie_taco_with_cream_and_greens>,
+    <birdsfoods:veggie_taco_supreme>,
+    <birdsfoods:veg_curry>,
+    <birdsfoods:veg_pizza>,
+    <birdsfoods:t_veggie_hamburger>,
+    <birdsfoods:veggie_cheeseburger>,
+    <birdsfoods:t_veggie_cheeseburger>,
+    <birdsfoods:t_veg_sandwich>,
+    <birdsfoods:t_cheesy_veg_sandwich>,
+    <birdsfoods:veggie_gyro>,
+    <birdsfoods:potato_salad>
+
+] as IItemStack[];
+
+for item in VeggieFood {
+
+    oreVeggieFood.add(item);
+
+}
+
+
+var oreFruitFood = <ore:FruitFood>;
+
+var FruitFood = [
+    <birdsfoods:fruit_salad>,
+    <birdsfoods:grilled_melon>,
+    <birdsfoods:sliced_cactus>,
+    <birdsfoods:jam>,
+    <birdsfoods:apple_pie_a_la_mode>,
+    <birdsfoods:baked_apple>,
+    <birdsfoods:apple_pie>,
+    <minecraft:speckled_melon>,
+    <birdsfoods:berry_hotcakes>,
+    <birdsfoods:jammy_toast>,
+    <birdsfoods:jammy_buttered_toast>,
+    <birdsfoods:berry_hotcakes_syrup>,
+    <birdsfoods:berry_waffles>,
+    <birdsfoods:berry_waffles_syrup>
+
+
+] as IItemStack[];
+
+for item in FruitFood {
+
+    oreFruitFood.add(item);
+
+}
+
+
+var oreSweatFood = <ore:SweatFood>;
+
+var SweatFood = [
+    <birdsfoods:molasses>,
+    <birdsfoods:hotcakes_with_syrup>,
+    <birdsfoods:choc_hotcakes_syrup>,
+    <birdsfoods:berry_hotcakes_syrup>,
+    <birdsfoods:waffles_syrup>,
+    <birdsfoods:bacon_pancakes_syrup>,
+    <birdsfoods:choc_waffles_syrup>,
+    <birdsfoods:jam>,
+    <birdsfoods:chocolate_bar>,
+    <birdsfoods:sweet_tea>,
+    <birdsfoods:sweet_milk_tea>,
+    <birdsfoods:ice_cream>,
+    <birdsfoods:ice_cream_sundae>,
+    <birdsfoods:plum_pudding>,
+    <birdsfoods:ice_cream_bacone>
+
+] as IItemStack[];
+
+for item in SweatFood {
+
+    oreSweatFood.add(item);
+
+}
+
+var oreDairy = <ore:Dairy>;
+
+var Dairy = [
+    
+    <birdsfoods:yogurt>,
+    <birdsfoods:milk_tea>,
+    <birdsfoods:sweet_milk_tea>,
+    <birdsfoods:chocolate_milk>,
+    <birdsfoods:hot_chocolate>,
+    <birdsfoods:ice_cream>,
+    <birdsfoods:ice_cream_sundae>,
+    <birdsfoods:plum_pudding>,
+    <birdsfoods:apple_pie_a_la_mode>,
+    <birdsfoods:astronaut_ice_cream>,
+    <birdsfoods:ice_cream_bacone>,
+    <birdsfoods:bottle_of_milk>,
+    <birdsfoods:quiche>,
+    <birdsfoods:mushroom_quiche>,
+    <birdsfoods:bacon_quiche>,
+    <birdsfoods:fish_quiche>,
+    <birdsfoods:green_quiche>,
+    <birdsfoods:butter>,
+    <birdsfoods:alfredo_sauce>,
+    <birdsfoods:mac_and_cheese>,
+    <birdsfoods:mashed_potato>,
+    <birdsfoods:mashed_potato_gravy>,
+    <birdsfoods:pumpkin_spice_latte>,
+    <birdsfoods:pumpkin_bread>,
+    <birdsfoods:shortbread_cookie>,
+    <birdsfoods:cookie_dough>,
+    <birdsfoods:cheese>,
+    <birdsfoods:cheese_fries>,
+    <birdsfoods:cheese_sandwich>,
+    <birdsfoods:t_cheese_sandwich>,
+    <birdsfoods:bacon_and_cheese_sandwich>,
+    <birdsfoods:egg_and_cheese_sandwich>,
+    <birdsfoods:t_bacon_and_cheese_sandwich>,
+    <birdsfoods:t_egg_and_cheese_sandwich>,
+    <birdsfoods:bacon_egg_and_cheese_sandwich>,
+    <birdsfoods:t_bacon_egg_and_cheese_sandwich>,
+    <birdsfoods:beef_taco_with_cream>,
+    <birdsfoods:chicken_taco_with_cream>,
+    <birdsfoods:cheesy_veggie_taco>,
+    <birdsfoods:cheesy_fish_taco>,
+    <birdsfoods:cheesy_pork_taco>,
+    <birdsfoods:cheesy_chicken_taco>,
+    <birdsfoods:cheesy_beef_taco>,
+    <birdsfoods:pork_taco_with_cream>,
+    <birdsfoods:fish_taco_with_cream>,
+    <birdsfoods:veggie_taco_with_cream>,
+    <birdsfoods:beef_taco_with_greens>,
+    <birdsfoods:cheesy_beef_taco_with_cream>,
+    <birdsfoods:cheesy_chicken_taco_with_cream>,
+    <birdsfoods:cheesy_pork_taco_with_cream>,
+    <birdsfoods:cheesy_fish_taco_with_cream>,
+    <birdsfoods:cheesy_veggie_taco_with_cream>,
+    <birdsfoods:cheesy_beef_taco_with_greens>,
+    <birdsfoods:cheesy_chicken_taco_with_greens>,
+    <birdsfoods:cheesy_pork_taco_with_greens>,
+    <birdsfoods:cheesy_fish_taco_with_greens>,
+    <birdsfoods:cheesy_veggie_taco_with_greens>,
+    <birdsfoods:chicken_taco_with_cream_and_greens>,
+    <birdsfoods:beef_taco_with_cream_and_greens>,
+    <birdsfoods:pork_taco_with_cream_and_greens>,
+    <birdsfoods:fish_taco_with_cream_and_greens>,
+    <birdsfoods:veggie_taco_with_cream_and_greens>,
+    <birdsfoods:beef_taco_supreme>,
+    <birdsfoods:chicken_taco_supreme>,
+    <birdsfoods:pork_taco_supreme>,
+    <birdsfoods:fish_taco_supreme>,
+    <birdsfoods:veggie_taco_supreme>,
+    <birdsfoods:breakfast_burrito>,
+    <birdsfoods:taako>,
+    <birdsfoods:t_bacon_hamburger>,
+    <birdsfoods:cheeseburger>,
+    <birdsfoods:t_cheeseburger>,
+    <birdsfoods:bacon_cheeseburger>,
+    <birdsfoods:t_bacon_cheeseburger>,
+    <birdsfoods:cheesesteak>,
+    <birdsfoods:t_cheesesteak>,
+    <birdsfoods:veggie_cheeseburger>,
+    <birdsfoods:t_veggie_cheeseburger>,
+    <birdsfoods:cheesy_veg_sandwich>,
+    <birdsfoods:t_cheesy_veg_sandwich>,
+    <birdsfoods:cheesy_chicken_sandwich>,
+    <birdsfoods:t_cheesy_chicken_sandwich>,
+    <birdsfoods:cheesy_buffalo_chicken_sandwich>,
+    <birdsfoods:t_cheesy_buffalo_chicken_sandwich>,
+    <birdsfoods:ham_and_cheese_sandwich>,
+    <birdsfoods:t_ham_and_cheese_sandwich>,
+    <birdsfoods:cheesy_chip_sandwich>,
+    <birdsfoods:t_cheesy_chip_sandwich>,
+    <birdsfoods:fettucine_alfredo>,
+    <birdsfoods:paneer_tikka>,
+    <birdsfoods:smothered_potato>,
+    <birdsfoods:chili_cheese_fries>,
+    <birdsfoods:jammy_buttered_toast>,
+    <birdsfoods:fettucine_alfredo> 
+
+] as IItemStack[];
+
+for item in Dairy {
+
+    oreDairy.add(item);
+
+}

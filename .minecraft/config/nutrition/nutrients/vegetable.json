@@ -28,7 +28,8 @@
 			"listAllmushroom",
 			"listAllpepper",
 			"listAllspice",
-			"listAllveggie"
+			"listAllveggie",
+			"VeggieFood"
 		],
 		"items": [
 			"nyx:lunar_water_bottle",

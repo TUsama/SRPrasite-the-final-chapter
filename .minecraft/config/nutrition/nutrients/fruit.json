@@ -29,7 +29,9 @@
 			"fruitForestry",
 			"listAllberry",
 			"listAllfruit",
-			"listAllsmoothie"
+			"listAllsmoothie",
+			"listAlljuice",
+			"FruitFood"
 		],
 		"items": [
 			"futuremc:sweet_berries",

@@ -31,7 +31,8 @@
 			"foodTortilla",
 			"foodWalnutraisinbread",
 			"foodZucchinibread",
-			"listAllgrain"
+			"listAllgrain",
+			"FlourFood"
 		],
 		"items": [
 			"actuallyadditions:item_canola_seed",
