@@ -1,4 +1,4 @@
-// Mod Version: 1.4.0
+// Mod Version: 1.4.2
 {
     //the name of this damage type. Internally, this will be prepended with "ddd_". 
     //So here, the damage source is actually named ddd_example. If you use a preexisting damage type name here, DDD will register the damageTypes field for that preexisting type, and ignore everything else.
