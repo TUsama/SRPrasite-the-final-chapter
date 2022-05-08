@@ -18,7 +18,11 @@
       },
       {
         "class": "ItemSword"
+      },
+      {
+        "item": "totaltinkers:dagger"
       }
+      
     ],
     "blacklist": [
     
