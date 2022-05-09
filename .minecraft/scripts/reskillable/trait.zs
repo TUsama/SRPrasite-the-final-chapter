@@ -5,7 +5,7 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.event.ILivingEvent;
 import crafttweaker.event.IEntityEvent;
 import crafttweaker.entity.IEntity;
-
+import crafttweaker.entity.IEntityDefinition;
 
 //定义新trait
 var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:knowledge_of_parasite", 1, "compatskills:knowledge_of_parasite|10");
@@ -62,13 +62,17 @@ var parasite = [
         <entity:srparasites:ada_arachnida>,
 
 
-];
+] as IEntityDefinition[];
 
 //trait内容
 test.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
     if (event.damageSource.trueSource instanceof IPlayer && parasite has event.entity.definition) {
-        
+        var player as string= event.damageSource.trueSource;
+        var mob as string = event.entity.definition;
         event.amount = event.amount * 1.15;
+        print("player, mob");
 
     }
+
+    if ()
 };
