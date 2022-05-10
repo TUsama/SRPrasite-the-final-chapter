@@ -9,70 +9,100 @@ import crafttweaker.entity.IEntityDefinition;
 
 //定义新trait
 var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:knowledge_of_parasite", 1, "compatskills:knowledge_of_parasite|10");
-//名字以及可被增伤的entity
-test.name = "寄生弱点";
-var parasite = [
+//可被增伤的entity
+var parasite_entity = [
 
-        <entity:srparasites:pri_longarms>,
-        <entity:srparasites:pri_manducater>,
-        <entity:srparasites:pri_summoner>,
-        <entity:srparasites:pri_reeker>,
-        <entity:srparasites:pri_yelloweye>,
-        <entity:srparasites:pri_bolster>,
-        <entity:srparasites:pri_arachnida>,
-        <entity:srparasites:pri_lum>,
-        <entity:srparasites:host>,
-        <entity:srparasites:crux>,
-        <entity:srparasites:heed>,
-        <entity:srparasites:sim_bear>,
-        <entity:srparasites:sim_enderman>,
-        <entity:srparasites:sim_adventurer>,
-        <entity:srparasites:sim_bigspider>,
-        <entity:srparasites:sim_human>,
-        <entity:srparasites:sim_humanhead>,
-        <entity:srparasites:sim_villager>,
-        <entity:srparasites:sim_villagerhead>,
-        <entity:srparasites:sim_cow>,
-        <entity:srparasites:sim_cowhead>,
-        <entity:srparasites:sim_horse>,
-        <entity:srparasites:sim_horsehead>,
-        <entity:srparasites:sim_pig>,
-        <entity:srparasites:sim_pighead>,
-        <entity:srparasites:sim_sheep>,
-        <entity:srparasites:sim_sheephead>,
-        <entity:srparasites:sim_wolf>,
-        <entity:srparasites:sim_wolfhead>,
-        <entity:srparasites:sim_dragone>,
-        <entity:srparasites:overseer>,
-        <entity:srparasites:bomber_light>,
-        <entity:srparasites:bomber_heavy>,
-        <entity:srparasites:carrier_heavy>,
-        <entity:srparasites:buglin>,
-        <entity:srparasites:carrier_flying>,
-        <entity:srparasites:rupter>,
-        <entity:srparasites:anc_dreadnaut>,
-        <entity:srparasites:anc_overlord>,
-        <entity:srparasites:vigilante>,
-        <entity:srparasites:ada_longarms>,
-        <entity:srparasites:ada_summoner>,
-        <entity:srparasites:ada_manducater>,
-        <entity:srparasites:ada_reeker>,
-        <entity:srparasites:ada_yelloweye>,
-        <entity:srparasites:ada_bolster>,
-        <entity:srparasites:ada_arachnida>,
+    "srparasites.ada_arachnida",
+    "srparasites.ada_bolster",
+    "srparasites.ada_longarms",
+    "srparasites.ada_manducater",
+    "srparasites.ada_reeker",
+    "srparasites.ada_summoner",
+    "srparasites.ada_yelloweye",
+    "srparasites.anc_dreadnaut",
+    "srparasites.anc_dreadnaut_ten",
+    "srparasites.anc_overlord",
+    "srparasites.anc_pod",
+    "srparasites.ancientball",
+    "srparasites.antiinfestedblock",
+    "srparasites.ballball",
+    "srparasites.beckon_si",
+    "srparasites.beckon_sii",
+    "srparasites.beckon_siii",
+    "srparasites.beckon_siv",
+    "srparasites.biomass",
+    "srparasites.biomassball",
+    "srparasites.bomb",
+    "srparasites.bomber_light",
+    "srparasites.buglin",
+    "srparasites.carrier_flying",
+    "srparasites.carrier_heavy",
+    "srparasites.cloudtoxic",
+    "srparasites.crux",
+    "srparasites.gore",
+    "srparasites.grunt",
+    "srparasites.heed",
+    "srparasites.homming",
+    "srparasites.host",
+    "srparasites.incompleteform_medium",
+    "srparasites.incompleteform_small",
+    "srparasites.kyphosis",
+    "srparasites.marauder",
+    "srparasites.missile",
+    "srparasites.movingflesh",
+    "srparasites.overseer",
+    "srparasites.pri_arachnida",
+    "srparasites.pri_bolster",
+    "srparasites.pri_devourer",
+    "srparasites.pri_longarms",
+    "srparasites.pri_manducater",
+    "srparasites.pri_reeker",
+    "srparasites.pri_summoner",
+    "srparasites.pri_yelloweye",
+    "srparasites.rupter",
+    "srparasites.salivaball",
+    "srparasites.scent",
+    "srparasites.sentry",
+    "srparasites.sim_adventurer",
+    "srparasites.sim_bear",
+    "srparasites.sim_bigspider",
+    "srparasites.sim_cow",
+    "srparasites.sim_cowhead",
+    "srparasites.sim_dragone",
+    "srparasites.sim_enderman",
+    "srparasites.sim_horse",
+    "srparasites.sim_horsehead",
+    "srparasites.sim_human",
+    "srparasites.sim_humanhead",
+    "srparasites.sim_pig",
+    "srparasites.sim_pighead",
+    "srparasites.sim_sheep",
+    "srparasites.sim_sheephead",
+    "srparasites.sim_villager",
+    "srparasites.sim_villagerhead",
+    "srparasites.sim_wolf",
+    "srparasites.sim_wolfhead",
+    "srparasites.spineball",
+    "srparasites.tendril",
+    "srparasites.vigilante",
+    "srparasites.warden",
+    "srparasites.webball",
+    "srparasites.worker",
 
 
-] as IEntityDefinition[];
+];
 
+for entity in parasite_entity {
+
+ var parasite as string[] = entity.definition.name;
+
+}
 //trait内容
 test.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
-    if (event.damageSource.trueSource instanceof IPlayer && parasite has event.entity.definition) {
-        var player as string= event.damageSource.trueSource;
-        var mob as string = event.entity.definition;
+
+    if (!isNull(event.damageSource.trueSource) && event.damageSource.trueSource instanceof IPlayer && !event.damageSource.trueSource.world.remote && parasite has event.entity.definition.name) {
+        var ODamage =  event.amount;
         event.amount = event.amount * 1.15;
-        print("player, mob");
 
     }
-
-    if ()
 };
