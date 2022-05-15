@@ -24,31 +24,23 @@ var parasite_entity = [
     "srparasites.anc_overlord",
     "srparasites.anc_pod",
     "srparasites.ancientball",
-    "srparasites.antiinfestedblock",
-    "srparasites.ballball",
     "srparasites.beckon_si",
     "srparasites.beckon_sii",
     "srparasites.beckon_siii",
     "srparasites.beckon_siv",
-    "srparasites.biomass",
-    "srparasites.biomassball",
-    "srparasites.bomb",
     "srparasites.bomber_light",
     "srparasites.buglin",
     "srparasites.carrier_flying",
     "srparasites.carrier_heavy",
-    "srparasites.cloudtoxic",
     "srparasites.crux",
     "srparasites.gore",
     "srparasites.grunt",
     "srparasites.heed",
-    "srparasites.homming",
     "srparasites.host",
     "srparasites.incompleteform_medium",
     "srparasites.incompleteform_small",
     "srparasites.kyphosis",
     "srparasites.marauder",
-    "srparasites.missile",
     "srparasites.movingflesh",
     "srparasites.overseer",
     "srparasites.pri_arachnida",
@@ -60,8 +52,6 @@ var parasite_entity = [
     "srparasites.pri_summoner",
     "srparasites.pri_yelloweye",
     "srparasites.rupter",
-    "srparasites.salivaball",
-    "srparasites.scent",
     "srparasites.sentry",
     "srparasites.sim_adventurer",
     "srparasites.sim_bear",
@@ -82,26 +72,19 @@ var parasite_entity = [
     "srparasites.sim_villagerhead",
     "srparasites.sim_wolf",
     "srparasites.sim_wolfhead",
-    "srparasites.spineball",
     "srparasites.tendril",
     "srparasites.vigilante",
     "srparasites.warden",
-    "srparasites.webball",
     "srparasites.worker",
 
 
 ];
 
-for entity in parasite_entity {
-
- var parasite as string[] = entity.definition.name;
-
-}
 //trait内容
 test.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
 
-    if (!isNull(event.damageSource.trueSource) && event.damageSource.trueSource instanceof IPlayer && !event.damageSource.trueSource.world.remote && parasite has event.entity.definition.name) {
-        var ODamage =  event.amount;
+    if (!isNull(event.damageSource.trueSource) && event.damageSource.trueSource instanceof IPlayer && !event.damageSource.trueSource.world.remote && parasite_entity has event.entity.definition.name) {
+        
         event.amount = event.amount * 1.15;
 
     }
