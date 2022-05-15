@@ -11,11 +11,11 @@ import crafttweaker.world.IWorld;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IItemDefinition;
 
-var test_1 = mods.compatskills.TraitCreator.createTrait("test_1", 0, 0, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|5");
+var gun_unlock_1 = mods.compatskills.TraitCreator.createTrait("gun_unlock_1", 0, 0, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|5");
 
-var test_2 = mods.compatskills.TraitCreator.createTrait("test_2", 0,1, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|10");
+var gun_unlock_2 = mods.compatskills.TraitCreator.createTrait("gun_unlock_2", 0,1, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|10");
 
-var test_3 = mods.compatskills.TraitCreator.createTrait("test_3", 0, 2, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|15");
+var gun_unlock_3 = mods.compatskills.TraitCreator.createTrait("gun_unlock_3", 0, 2, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|15");
 
 //手枪增伤
 var gun_damage_improve_1 = mods.compatskills.TraitCreator.createTrait("gun_damage_improve_1", 1, 0, "compatskills:knowledge_of_gun", 1, "compatskills:knowledge_of_gun|5");
@@ -152,34 +152,6 @@ var gun_damage_improve_4 = mods.compatskills.TraitCreator.createTrait("gun_damag
     } 
 };
 
-
- /*   var holdcheck = client.player.currentitem;
-
-    var hold_guning = [
-
-
-    ] as ItemStack[];
-
-    if (hold_guning has holdcheck) {
-
-        test.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
-
-        var gun_list = [
-
-
-
-        ] as Itemstack[];
-
-        var check = !isNull(c) && event.damageSource.trueSource instanceof IPlayer && !event.damageSource.trueSource.world.remote && event.damageSource.trueSource.currentitem has gun_list;
-
-            if (check) {
-
-                event.amount = event.amount * 1.20;
-
-            }
-        };
-    }
-*/
 
 
 
