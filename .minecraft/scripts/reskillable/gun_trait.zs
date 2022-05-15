@@ -23,25 +23,24 @@ var gun_damage_improve_1 = mods.compatskills.TraitCreator.createTrait("gun_damag
     gun_damage_improve_1.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent){
 
 // 检测直接来源，真正来源和空指针/服务端
-
         var player_check = event.damageSource.trueSource instanceof IPlayer;
-
+//检测是否是玩家
         if (player_check) {
-
+            //判断immediateSource.definition是否是空，如果是玩家以特定（如近战）的方式攻击，则玩家作为immediateSource是没有definition的
             if(!isNull(event.damageSource.immediateSource.definition)){
-
+                //非空检测后定义此变量
                 var direct_source = event.damageSource.immediateSource.definition.name;
-
+                //增伤对象
                 var gun_list = [
 
                 <cgm:handgun>.definition,
 
                 ] as IItemDefinition[];
-
+                //检测是否有trueSource，以及trueSource是否是在服务端
                 var game_check = !isNull(event.damageSource.trueSource) && !event.damageSource.trueSource.world.remote;
-
+                //获取玩家
                 var player as IPlayer = event.damageSource.trueSource;
-
+                //实际增伤部分
                 if (direct_source == "cgm.projectile" && gun_list has player.currentItem && game_check) {
 
                         event.amount = event.amount * 1.10;
@@ -56,7 +55,6 @@ var gun_damage_improve_2 = mods.compatskills.TraitCreator.createTrait("gun_damag
 
     gun_damage_improve_2.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent){
 
-// 检测直接来源，真正来源和空指针/服务端
 
         var player_check = event.damageSource.trueSource instanceof IPlayer;
 
@@ -92,7 +90,6 @@ var gun_damage_improve_3 = mods.compatskills.TraitCreator.createTrait("gun_damag
 
     gun_damage_improve_3.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent){
 
-// 检测直接来源，真正来源和空指针/服务端
 
         var player_check = event.damageSource.trueSource instanceof IPlayer;
 
@@ -130,7 +127,6 @@ var gun_damage_improve_4 = mods.compatskills.TraitCreator.createTrait("gun_damag
 
     gun_damage_improve_4.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent){
 
-// 检测直接来源，真正来源和空指针/服务端
 
         var player_check = event.damageSource.trueSource instanceof IPlayer;
 
@@ -142,7 +138,6 @@ var gun_damage_improve_4 = mods.compatskills.TraitCreator.createTrait("gun_damag
 
                 var game_check = !isNull(event.damageSource.trueSource) && !event.damageSource.trueSource.world.remote;
 
-// 内容：只要是枪就能增伤
                 if (direct_source == "cgm.projectile" && game_check) {
 
                     event.amount = event.amount * 1.05;
