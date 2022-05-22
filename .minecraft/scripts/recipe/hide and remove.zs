@@ -25,7 +25,6 @@ var hideandremove = [
     <nocubessrpaddon:flamethrowerbarrel>,
     <nocubessrpaddon:flamethrowergrip>,
     <nocubessrpaddon:flamethrowerpart>,
-	<quark:pickarang>,
     <bountifulbaubles:amuletcross>,
     <bountifulbaubles:ringflywheel>,
     <bountifulbaubles:ringflywheel>,

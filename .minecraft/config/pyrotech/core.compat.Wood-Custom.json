@@ -1,0 +1,38 @@
+{
+  "__comments": [
+    "WARNING: All changes should be made to the file with the name Custom",
+    "in the title. Changes made to the Generated file will be overwritten.",
+    "",
+    "This file defines input and output pairs for auto-generating recipes",
+    "for the Chopping Block.",
+    "",
+    "Entries are in the format (input): (output)",
+    "Entry item strings are in the format: (domain):(path):(meta)"
+  ],
+  "entries": {
+    "futuremc:stripped_acacia_log:0": "minecraft:planks:4",
+    "futuremc:stripped_birch_log:0": "minecraft:planks:2",
+    "futuremc:stripped_dark_oak_log:0": "minecraft:planks:5",
+    "futuremc:stripped_jungle_log:0": "minecraft:planks:3",
+    "futuremc:stripped_oak_log:0": "minecraft:planks:0",
+    "futuremc:stripped_spruce_log:0": "minecraft:planks:1",
+    "minecraft:log2:0": "minecraft:planks:4",
+    "minecraft:log2:1": "minecraft:planks:5",
+    "minecraft:log:0": "minecraft:planks:0",
+    "minecraft:log:1": "minecraft:planks:1",
+    "minecraft:log:2": "minecraft:planks:2",
+    "minecraft:log:3": "minecraft:planks:3",
+    "minecraft:planks:0": "minecraft:wooden_slab:0",
+    "minecraft:planks:1": "minecraft:wooden_slab:1",
+    "minecraft:planks:2": "minecraft:wooden_slab:2",
+    "minecraft:planks:3": "minecraft:wooden_slab:3",
+    "minecraft:planks:4": "minecraft:wooden_slab:4",
+    "minecraft:planks:5": "minecraft:wooden_slab:5",
+    "primallib:log_stripped_acacia:0": "minecraft:planks:4",
+    "primallib:log_stripped_birch:0": "minecraft:planks:2",
+    "primallib:log_stripped_dark_oak:0": "minecraft:planks:5",
+    "primallib:log_stripped_jungle:0": "minecraft:planks:3",
+    "primallib:log_stripped_oak:0": "minecraft:planks:0",
+    "primallib:log_stripped_spruce:0": "minecraft:planks:1"
+  }
+}

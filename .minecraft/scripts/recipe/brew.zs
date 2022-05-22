@@ -1,19 +1,9 @@
 import crafttweaker.item.IItemStack;
 
-//重写夸克的抗性药水
-//移除石英酿造粗制药水（输入，原料）
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:quartz>);
-//移除强抗性提升药水配方
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "quark:resistance"}), <minecraft:glowstone_dust>);
-//添加抗性提升药水配方
-brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:obsidian>, <minecraft:potion>.withTag({Potion: "quark:resistance"}));
-//添加强抗性提升药水配方（需要下界合金碎片）
-brewing.addBrew(<minecraft:potion>.withTag({Potion: "quark:resistance"}), <futuremc:netherite_scrap>, <minecraft:potion>.withTag({Potion: "quark:strong_resistance"}));
-
-//使用月露作为酿药基底
+/*使用月露作为酿药基底
 //粗制的药水
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:nether_wart>);
 brewing.addBrew(<nyx:lunar_water_bottle>, <minecraft:nether_wart>, <minecraft:potion>.withTag({Potion: "minecraft:awkward"}));
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:nether_wart>);
 //
 //平凡的药水
 var mundane_materials = [
@@ -42,7 +32,7 @@ brewing.addBrew(<nyx:lunar_water_bottle>, item, <minecraft:potion>.withTag({Poti
 //浓稠的药水
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <minecraft:glowstone_dust>);
 brewing.addBrew(<nyx:lunar_water_bottle>, <minecraft:glowstone_dust>, <minecraft:potion>.withTag({Potion: "minecraft:thick"}));
-//
+*/
 //伤害吸收药水
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:golden_apple>, <minecraft:potion>.withTag({Potion: "potioncore:absorption"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:absorption"}), <minecraft:glowstone_dust>, <minecraft:potion>.withTag({Potion: "potioncore:strong_absorption"}));
@@ -55,3 +45,14 @@ brewing.addBrew(<med:steroids>, <minecraft:fermented_spider_eye>, <med:melatonin
 //牛奶三件套
 brewing.addBrew(<birdsfoods:bottle_of_milk>, <minecraft:gunpowder>, <bottledmilk:milk_bottle_splash>);
 brewing.addBrew(<birdsfoods:bottle_of_milk>, <minecraft:dragon_breath>, <bottledmilk:milk_bottle_lingering>);
+
+//重写夸克的抗性药水
+//移除石英酿造粗制药水（输入，原料）
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:quartz>);
+//移除强抗性提升药水配方
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "quark:resistance"}), <minecraft:glowstone_dust>);
+//添加抗性提升药水配方
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:obsidian>, <minecraft:potion>.withTag({Potion: "quark:resistance"}));
+//添加强抗性提升药水配方（需要下界合金碎片）
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "quark:resistance"}), <futuremc:netherite_scrap>, <minecraft:potion>.withTag({Potion: "quark:strong_resistance"}));
+

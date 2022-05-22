@@ -61,3 +61,5 @@ MinecraftModWatcher.exe
 *.disabled
 .minecraft/ModWatcher/config.json
 .minecraft/mods
+.minecraft/XaeroWaypoints
+.minecraft/XaeroWaypoints_BACKUP032021
