@@ -63,3 +63,5 @@ MinecraftModWatcher.exe
 .minecraft/mods
 .minecraft/XaeroWaypoints
 .minecraft/XaeroWaypoints_BACKUP032021
+bfg-1.14.0.jar
+.git.bfg-report

@@ -64,7 +64,11 @@ events.onEntityLivingUseItemFinish(function(event as Finish) {
         var prevData = event.player.data;
         var newData as IData = { sanity: sanity_minus };
         if (!isNull(prevData)) {
-            newData = prevData + ({ sanity: prevData.sanity.getFloat() - sanity_minus });
+            if (prevDataprevData.sanity.getFloat() > sanity_minus) {
+                newData = prevData + ({ sanity: prevData.sanity.getFloat() - sanity_minus });
+            } else {
+                newData = prevData + ({ sanity: max(prevData.sanity.getFloat() - sanity_minus, 0.1) });
+            }
         }
         event.player.update(newData);
     }
