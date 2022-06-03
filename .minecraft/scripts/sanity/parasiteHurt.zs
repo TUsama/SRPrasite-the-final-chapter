@@ -6,7 +6,9 @@ import crafttweaker.event.IEntityEvent;
 import crafttweaker.entity.IEntity;
 import crafttweaker.event.EntityLivingDamageEvent;
 import crafttweaker.entity.IEntityMob;
-import scripts.sanity.functions;
+import scripts.functions;
+import crafttweaker.data.IData;
+
 
 var parasite_entity as string[] = [
     "srparasites.ada_arachnida",
@@ -84,17 +86,19 @@ events.onEntityLivingDamage(function(event as crafttweaker.event.EntityLivingDam
                 if (dmgs_check) {
                     var dmg_amount as float = event.amount;
                     var sanity_minus as float = 0.009 * dmg_amount * dmg_amount + 0.05;
-                    var prevData = event.player.data;
+                    var player as IPlayer = event.entity;
+                    var prevData as IData = player.data;
                     var newData as IData = { sanity: sanity_minus };
                     functions.sanityMinus(sanity_minus, prevData, newData);
-                    event.player.update(newData);
+                    player.update(newData);
                 }
             } else {
                 var sanity_minus as float = 0.05;
-                var prevData = event.player.data;
+                var player as IPlayer = event.entity;
+                var prevData as IData = player.data;
                 var newData as IData = { sanity: sanity_minus };
                 functions.sanityMinus(sanity_minus, prevData, newData);
-                event.player.update(newData);
+                player.update(newData);
             }
         }
     }

@@ -72,7 +72,7 @@ var hideAndRemove as IItemStack[] = [
     <tconstruct:cast_custom:4>
 ];
 
-for item in hideandremove {
+for item in hideAndRemove {
     mods.jei.JEI.hide(item);
     recipes.remove(item);
     mods.tconstruct.Casting.removeTableRecipe(item);
