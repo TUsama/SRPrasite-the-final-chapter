@@ -3,17 +3,15 @@ import mods.jei.JEI;
 import crafttweaker.mods.ILoadedMods;
 import crafttweaker.mods.IMod;
 
-var hide = [
+var hide as IItemStack[] = [
 
-] as IItemStack[];
+];
 
 for item in hide {
-
-mods.jei.JEI.hide(item);
-
+    mods.jei.JEI.hide(item);
 }
 
-var hideandremove = [
+var hideAndRemove as IItemStack[] = [
     <nocubessrpaddon:flamethrower2>,
     <nocubessrpaddon:flamethrower>,
     <nocubessrpaddon:flamethrower3>,
@@ -30,28 +28,22 @@ var hideandremove = [
     <bountifulbaubles:ringflywheel>,
     <bountifulbaubles:ringflywheeladvanced>,
     <bountifulbaubles:ringflywheeladvanced>
+];
 
-] as IItemStack[];
-
-for item in hideandremove {
-
-mods.jei.JEI.hide(item);
-recipes.remove(item);
-
+for item in hideAndRemove {
+    mods.jei.JEI.hide(item);
+    recipes.remove(item);
 }
 
-
-val hidemods = [
+val hideMods as IMod[] = [
     loadedMods["soviet"],
-] as IMod[];
+];
 
-
-for mod in hidemods {
+for mod in hideMods {
     for item in mod.items{
         recipes.remove(item);
         mods.jei.JEI.hide(item);
     }
-
 }
 
 

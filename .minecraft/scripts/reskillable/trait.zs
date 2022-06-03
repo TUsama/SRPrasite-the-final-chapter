@@ -10,8 +10,7 @@ import crafttweaker.entity.IEntityDefinition;
 //定义新trait
 var test = mods.compatskills.TraitCreator.createTrait("test", 2, 3, "compatskills:knowledge_of_parasite", 1, "compatskills:knowledge_of_parasite|10");
 //可被增伤的entity
-var parasite_entity = [
-
+var parasite_entity as string[] = [
     "srparasites.ada_arachnida",
     "srparasites.ada_bolster",
     "srparasites.ada_longarms",
@@ -76,24 +75,16 @@ var parasite_entity = [
     "srparasites.vigilante",
     "srparasites.warden",
     "srparasites.worker",
-
-
-] as string[];
+];
 
 //trait内容
 test.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
     if (!isNull(event.damageSource.trueSource)) {
-
         var DmgS as IPlayer= event.damageSource.trueSource;
-
         if (!isNull(event.entity.definition)) {
-
             var hit_entity_name as string= event.entity.definition.name;
-
             if (DmgS instanceof IPlayer && !DmgS.world.remote && parasite_entity has hit_entity_name) {
-                
                 event.amount = event.amount * 1.15;
-
             }
         }
     }

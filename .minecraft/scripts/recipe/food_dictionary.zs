@@ -2,13 +2,9 @@ import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IItemStack;
 
-
-
-
 var oreFlourFood = <ore:FlourFood>;
 
-
-var FlourFood = [
+var flourFood as IItemStack[] = [
     <birdsfoods:hotcakes>,
     <birdsfoods:hotcakes_with_syrup>,
     <birdsfoods:choc_hotcakes>,
@@ -163,19 +159,15 @@ var FlourFood = [
     <birdsfoods:pumpkin_bread>,
     <birdsfoods:shortbread_cookie>,
     <birdsfoods:cookie_dough>
+];
 
-
-] as IItemStack[];
-
-for item in FlourFood {
-
-oreFlourFood.add(item);
-
+for item in flourFood {
+    oreFlourFood.add(item);
 }
 
 var oreMeatFood = <ore:MeatFood>;
 
-var MeatFood = [
+var meatFood as IItemStack[] = [
     <birdsfoods:sliced_lamb>,
     <birdsfoods:chopped_chicken>,
     <birdsfoods:raw_fingers>,
@@ -263,19 +255,15 @@ var MeatFood = [
     <birdsfoods:pork_taco_supreme>,
     <birdsfoods:fish_taco_supreme>,
     <birdsfoods:cobb_salad>
+];
 
-] as IItemStack[];
-
-for item in MeatFood {
-
+for item in meatFood {
     oreMeatFood.add(item);
-
 }
-
 
 var oreVeggieFood = <ore:VeggieFood>;
 
-var VeggieFood = [
+var veggieFood as IItemStack[] = [
     <birdsfoods:dandelion_salad>,
     <birdsfoods:spring_salad>,
     <birdsfoods:cobb_salad>,
@@ -300,19 +288,15 @@ var VeggieFood = [
     <birdsfoods:t_cheesy_veg_sandwich>,
     <birdsfoods:veggie_gyro>,
     <birdsfoods:potato_salad>
+];
 
-] as IItemStack[];
-
-for item in VeggieFood {
-
+for item in veggieFood {
     oreVeggieFood.add(item);
-
 }
-
 
 var oreFruitFood = <ore:FruitFood>;
 
-var FruitFood = [
+var fruitFood as IItemStack[] = [
     <birdsfoods:fruit_salad>,
     <birdsfoods:grilled_melon>,
     <birdsfoods:sliced_cactus>,
@@ -327,20 +311,15 @@ var FruitFood = [
     <birdsfoods:berry_hotcakes_syrup>,
     <birdsfoods:berry_waffles>,
     <birdsfoods:berry_waffles_syrup>
+];
 
-
-] as IItemStack[];
-
-for item in FruitFood {
-
+for item in fruitFood {
     oreFruitFood.add(item);
-
 }
-
 
 var oreSweatFood = <ore:SweatFood>;
 
-var SweatFood = [
+var sweatFood as IItemStack[] = [
     <birdsfoods:molasses>,
     <birdsfoods:hotcakes_with_syrup>,
     <birdsfoods:choc_hotcakes_syrup>,
@@ -357,18 +336,15 @@ var SweatFood = [
     <birdsfoods:plum_pudding>,
     <birdsfoods:ice_cream_bacone>
 
-] as IItemStack[];
+];
 
-for item in SweatFood {
-
+for item in sweatFood {
     oreSweatFood.add(item);
-
 }
 
 var oreDairy = <ore:Dairy>;
 
-var Dairy = [
-    
+var dairy as IItemStack[] = [
     <birdsfoods:yogurt>,
     <birdsfoods:milk_tea>,
     <birdsfoods:sweet_milk_tea>,
@@ -463,11 +439,8 @@ var Dairy = [
     <birdsfoods:chili_cheese_fries>,
     <birdsfoods:jammy_buttered_toast>,
     <birdsfoods:fettucine_alfredo> 
+];
 
-] as IItemStack[];
-
-for item in Dairy {
-
+for item in dairy {
     oreDairy.add(item);
-
 }

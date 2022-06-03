@@ -3,25 +3,18 @@ import mods.jei.JEI;
 import crafttweaker.mods.ILoadedMods;
 import crafttweaker.mods.IMod;
 
-val Category = [
-
+val categories as string[] = [
     "tcomplement:melter",
     "tcomplement:high_oven_mix",
     "tcomplement:high_oven_heat",
     "tcomplement:high_oven_melting"
+];
 
-
-] as string[];
-
-
-for String in Category {
-
-    mods.jei.JEI.hideCategory(String);
-
+for category in categories {
+    mods.jei.JEI.hideCategory(category);
 }
 
-var hide_NBT = [
-
+var hide_NBT as string[] = [
     "tconstruct:knife_blade",
     "tconstruct:large_plate",
     "tconstruct:bow_string",
@@ -62,36 +55,25 @@ var hide_NBT = [
     "conarm:chest_core",
     "tconstruct:broad_axe_head",
     "tconstruct:cross_guard"
+];
 
-
-
-] as string[];
-
-
-for String in hide_NBT {
-
-    mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: String}));
-    mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: String}));
-    mods.jei.JEI.hide(<tconstruct:clay_cast>.withTag({PartType: String}));
-    mods.jei.JEI.hide(<tconstruct:cast>.withTag({PartType: String}));
-
+for nbt in hide_NBT {
+    mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: nbt}));
+    mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: nbt}));
+    mods.jei.JEI.hide(<tconstruct:clay_cast>.withTag({PartType: nbt}));
+    mods.jei.JEI.hide(<tconstruct:cast>.withTag({PartType: nbt}));
 }
 
-var hideandremove = [
-
+var hideAndRemove as IItemStack[] = [
     <tconstruct:smeltery_controller>,
     <tcomplement:high_oven_controller>,
     <tconstruct:tinker_tank_controller>,
     <tconstruct:cast_custom:3>,
     <tconstruct:cast_custom:4>
-    
-] as IItemStack[];
+];
 
 for item in hideandremove {
-
     mods.jei.JEI.hide(item);
     recipes.remove(item);
     mods.tconstruct.Casting.removeTableRecipe(item);
-
-
 }
