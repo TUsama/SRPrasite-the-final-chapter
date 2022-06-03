@@ -32,18 +32,11 @@ var healthy_food as IItemStack[] = [
     <birdsfoods:ice_cream_bacone>
 ];
 
-events.onEntityLivingUseItemStart(function(event as crafttweaker.event.EntityLivingUseItemEvent.Start){
-    var check = healthy_food has event.item;
-    if (check){
-        var hunger_origin = event.player.foodStats.saturationLevel;
-        events.onEntityLivingUseItemFinish(function(event as crafttweaker.event.EntityLivingUseItemEvent.Finish){
-            var hunger_last = event.player.foodStats.saturationLevel;
-            var minus = hunger_last - hunger_origin;
-            var sanity_plus = 0.04 * minus * minus + 0.5;
-            event.player.setSanity(event.player.getSanity() + sanity_plus, false);
-        });
-    } else {
-        //no-op
+events.onEntityLivingUseItemFinish(function(event as crafttweaker.event.EntityLivingUseItemEvent.Finish){
+    var plusSan = healthy_food has event.item;
+    if(plusSan){
+        var saturation = event.item.saturation;
+        var sanity_plus = 0.04 * saturation * saturation + 0.5;
+        event.player.setSanity(event.player.getSanity() + sanity_plus, false);
     }
 });
-
