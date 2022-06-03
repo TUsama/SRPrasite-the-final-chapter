@@ -1,0 +1,5 @@
+# If you want to disable some hooks, just remove the comment mark (#) from its line.
+# Required Minecraft restart.
+# Game changes that are dependent on disabled hooks will be disabled.
+#
+# hooks_vanilla

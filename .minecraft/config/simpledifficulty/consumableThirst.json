@@ -1,0 +1,12 @@
+{
+  "minecraft:milk_bucket": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 4,
+      "saturation": 1.0,
+      "thirstyChance": 0.2
+    }
+  ]
+}

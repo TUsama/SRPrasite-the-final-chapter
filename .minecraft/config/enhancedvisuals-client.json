@@ -351,6 +351,39 @@
         "disabled": false,
         "opacity": 1.0
       }
+    },
+    "simple-thirst": {
+      "enabled": true,
+      "opacity": 1.0,
+      "defaultIntensity": 0,
+      "maxIntensity": 5,
+      "fadeFactor": 0.05000000074505806,
+      "thirstLevel": {
+        "min": 2,
+        "max": 8
+      },
+      "focus": {
+        "disabled": false,
+        "opacity": 1.0
+      }
+    },
+    "simple-temperature": {
+      "enabled": true,
+      "opacity": 1.0,
+      "defaultIntensity": 0,
+      "mediumIntensity": 0.2,
+      "maxIntensity": 0.4,
+      "fadeFactor": 0.005,
+      "freeze": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      },
+      "heat": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      }
     }
   }
 }
