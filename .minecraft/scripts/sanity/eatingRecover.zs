@@ -1,10 +1,10 @@
-#loader crafttweaker reloadableevents
+/*#loader crafttweaker reloadableevents
 
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
-import scripts.functions;
+import scripts.sanity.SanityUtils;
 import crafttweaker.data.IData;
 
 
@@ -55,8 +55,7 @@ events.onEntityLivingUseItemFinish(function(event as Finish) {
         val sanity_plus as float = 0.04 * saturation_1 * saturation_1 + 0.5;
         var player as IPlayer = event.entity;
         var prevData as IData = player.data;
-        var newData as IData = { sanity: sanity_plus };
-        funtions.sanityPlus(sanity_plus, prevData, newData);
+        SanityUtils.sanityPlus(sanity_plus, prevData);
         event.player.update(newData);        
     }
         if(unhealthy_check) {
@@ -64,7 +63,7 @@ events.onEntityLivingUseItemFinish(function(event as Finish) {
         val sanity_minus as float = 0.04 * saturation_2 * saturation_2 + 0.5;
         var prevData = event.player.data;
         var newData as IData = { sanity: sanity_minus };
-        functions.sanityMinus(sanity_minus, prevData, newData);
+        SanityUtils.sanityMinus(sanity_minus, prevData, newData);
         event.player.update(newData);
     }
         if(!healthy_check && !unhealthy_check && event.item.isFood) {
@@ -77,3 +76,4 @@ events.onEntityLivingUseItemFinish(function(event as Finish) {
         event.player.update(newData);
     }
 });
+*/

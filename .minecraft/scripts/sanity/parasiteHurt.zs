@@ -6,8 +6,8 @@ import crafttweaker.event.IEntityEvent;
 import crafttweaker.entity.IEntity;
 import crafttweaker.event.EntityLivingDamageEvent;
 import crafttweaker.entity.IEntityMob;
-import scripts.functions;
 import crafttweaker.data.IData;
+import scripts.sanity.SanityUtils;
 
 
 var parasite_entity as string[] = [
@@ -88,17 +88,13 @@ events.onEntityLivingDamage(function(event as crafttweaker.event.EntityLivingDam
                     var sanity_minus as float = 0.009 * dmg_amount * dmg_amount + 0.05;
                     var player as IPlayer = event.entity;
                     var prevData as IData = player.data;
-                    var newData as IData = { sanity: sanity_minus };
-                    functions.sanityMinus(sanity_minus, prevData, newData);
-                    player.update(newData);
+                    player.update(SanityUtils.sanityMinus(sanity_minus as float, prevData as IData));
                 }
             } else {
                 var sanity_minus as float = 0.05;
                 var player as IPlayer = event.entity;
                 var prevData as IData = player.data;
-                var newData as IData = { sanity: sanity_minus };
-                functions.sanityMinus(sanity_minus, prevData, newData);
-                player.update(newData);
+                player.update(SanityUtils.sanityMinus(sanity_minus, prevData));
             }
         }
     }
