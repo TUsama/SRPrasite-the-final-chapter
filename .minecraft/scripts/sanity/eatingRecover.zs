@@ -1,10 +1,6 @@
 #loader crafttweaker reloadableevents
 
 import crafttweaker.events.IEventManager;
-import crafttweaker.event.EntityLivingUseItemEvent.All;
-import crafttweaker.event.EntityLivingUseItemEvent.Start;
-import crafttweaker.event.EntityLivingUseItemEvent.Tick;
-import crafttweaker.event.EntityLivingUseItemEvent.Stop;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
@@ -32,11 +28,16 @@ var healthy_food as IItemStack[] = [
     <birdsfoods:ice_cream_bacone>
 ];
 
-events.onEntityLivingUseItemFinish(function(event as crafttweaker.event.EntityLivingUseItemEvent.Finish){
-    var plusSan = healthy_food has event.item;
-    if(plusSan){
-        var saturation = event.item.saturation;
-        var sanity_plus = 0.04 * saturation * saturation + 0.5;
-        event.player.setSanity(event.player.getSanity() + sanity_plus, false);
+events.onEntityLivingUseItemFinish(function(event as Finish) {
+    if(healthy_food has event.item) {
+        val saturation = event.item.saturation;
+        val sanity_plus = 0.04 * saturation * saturation + 0.5;
+        var prevData = event.player.data;
+        var newData as IData = { sanity: sanity_plus };
+        if (!isNull(prevData)) {
+            newData = prevData + ({ sanity: prevData.sanity.getFloat() + sanity_plus });
+        }
+
+        event.player.update(newData);
     }
 });
