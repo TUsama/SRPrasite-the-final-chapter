@@ -28,16 +28,55 @@ var healthy_food as IItemStack[] = [
     <birdsfoods:ice_cream_bacone>
 ];
 
+var unhealthy_food as IItemStack[] = [
+        <minecraft:rotten_flesh> ,
+        <nocubessrpaddon:pestbread>,
+        <nocubessrpaddon:dreadleaf>,
+        <nocubessrpaddon:redflesh>,
+        <nocubessrpaddon:cookedredflesh>,
+        <nocubessrpaddon:molderedpie>,
+        <nocubessrpaddon:alienburger>,
+        <nocubessrpaddon:parasitelarvae>,
+        <nocubessrpaddon:fleshfruitsoup>,
+        <nocubessrpaddon:plaguesalad>,
+        <nocubessrpaddon:fleshsoup>,
+        <nocubessrpaddon:ruptorsoup>,
+        <nocubessrpaddon:roastedlumps>,
+        <nocubessrpaddon:fleshbarbecue>,
+        <nocubessrpaddon:cookedparasiteheart>
+];
 events.onEntityLivingUseItemFinish(function(event as Finish) {
-    if(healthy_food has event.item) {
-        val saturation = event.item.saturation;
-        val sanity_plus = 0.04 * saturation * saturation + 0.5;
+    var healthy_check = healthy_food has event.item;
+    var unhealthy_check = unhealthy_food has event.item;
+    if(healthy_check) {
+        val saturation_1 = event.item.saturation;
+        val sanity_plus = 0.04 * saturation_1 * saturation_1 + 0.5;
         var prevData = event.player.data;
         var newData as IData = { sanity: sanity_plus };
         if (!isNull(prevData)) {
             newData = prevData + ({ sanity: prevData.sanity.getFloat() + sanity_plus });
         }
-
         event.player.update(newData);
     }
+        if(unhealthy_check) {
+        val saturation_2 = event.item.saturation;
+        val sanity_minus = 0.04 * saturation_2 * saturation_2 + 0.5;
+        var prevData = event.player.data;
+        var newData as IData = { sanity: sanity_minus };
+        if (!isNull(prevData)) {
+            newData = prevData + ({ sanity: prevData.sanity.getFloat() - sanity_minus });
+        }
+        event.player.update(newData);
+    }
+        if(!healthy_check && !unhealthy_check && event.item.isFood) {
+        val saturation_3 = event.item.saturation;
+        val sanity_the_rest = 0.02 * saturation_3 * saturation_3 + 0.3;
+        var prevData = event.player.data;
+        var newData as IData = { sanity: sanity_the_rest };
+        if (!isNull(prevData)) {
+            newData = prevData + ({ sanity: prevData.sanity.getFloat() + sanity_the_rest });
+        }
+        event.player.update(newData);
+    }
+
 });

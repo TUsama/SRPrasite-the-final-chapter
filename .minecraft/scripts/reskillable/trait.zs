@@ -82,7 +82,7 @@ test.onAttackMob = function(event as crafttweaker.event.EntityLivingHurtEvent) {
     if (!isNull(event.damageSource.trueSource)) {
         var DmgS as IPlayer= event.damageSource.trueSource;
         if (!isNull(event.entity.definition)) {
-            var hit_entity_name as string= event.entity.definition.name;
+            var hit_entity_name as string = event.entity.definition.name;
             if (DmgS instanceof IPlayer && !DmgS.world.remote && parasite_entity has hit_entity_name) {
                 event.amount = event.amount * 1.15;
             }
