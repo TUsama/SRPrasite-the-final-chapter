@@ -11,10 +11,10 @@ import crafttweaker.item.IItemStack;
 
 
 var healthy_food as IItemStack[] = [
-	<minecraft:cake>,
-	<futuremc:honey_bottle>,
-	<futuremc:sweet_berries>,
-	<minecraft:beetroot>,
+    <minecraft:cake>,
+    <futuremc:honey_bottle>,
+    <futuremc:sweet_berries>,
+    <minecraft:beetroot>,
     <birdsfoods:molasses>,
     <birdsfoods:hotcakes_with_syrup>,
     <birdsfoods:choc_hotcakes_syrup>,
