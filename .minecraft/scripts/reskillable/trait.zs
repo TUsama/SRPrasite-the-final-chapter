@@ -2,7 +2,6 @@ import mods.compatskills.Skill;
 import crafttweaker.event.EntityLivingHurtEvent;
 import crafttweaker.damage.IDamageSource;
 import crafttweaker.player.IPlayer;
-import crafttweaker.event.ILivingEvent;
 import crafttweaker.event.IEntityEvent;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;
