@@ -79,22 +79,18 @@ var parasite_entity as string[] = [
 
 events.onEntityLivingDamage(function(event as crafttweaker.event.EntityLivingDamageEvent) {
     if (event.entity instanceof IPlayer) {
+        var player as IPlayer = event.entity;
         if (!isNull(event.damageSource.trueSource)){
-        var dmgs_check = parasite_entity has event.damageSource;
+        var dmgs_check = parasite_entity has event.damageSource.trueSource.definition.name;
         var mob_check = event.damageSource.trueSource instanceof IEntityMob;
-            if (mob_check) {
-                if (dmgs_check) {
-                    var dmg_amount as float = event.amount;
-                    var sanity_minus as float = 0.009 * dmg_amount * dmg_amount + 0.05;
-                    var player as IPlayer = event.entity;
-                    var prevData as IData = player.data;
-                    player.update(SanityUtils.sanityMinus(sanity_minus as float, prevData as IData));
-                }
+            if (mob_check && dmgs_check) {
+                var dmg_amount as float = event.amount;
+                var sanity_minus as float = 0.009f * dmg_amount * dmg_amount + 0.05f;
+                SanityUtils.sanityMinus(sanity_minus, player);
             } else {
-                var sanity_minus as float = 0.05;
-                var player as IPlayer = event.entity;
+                var sanity_minus as float = 0.05f;
                 var prevData as IData = player.data;
-                player.update(SanityUtils.sanityMinus(sanity_minus, prevData));
+                SanityUtils.sanityMinus(sanity_minus, player);
             }
         }
     }

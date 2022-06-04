@@ -1,4 +1,4 @@
-/*#loader crafttweaker reloadableevents
+#loader crafttweaker reloadableevents
 
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
@@ -52,28 +52,21 @@ events.onEntityLivingUseItemFinish(function(event as Finish) {
     var unhealthy_check = unhealthy_food has event.item;
     if(healthy_check) {
         val saturation_1 as float = event.item.saturation;
-        val sanity_plus as float = 0.04 * saturation_1 * saturation_1 + 0.5;
+        val sanity_plus as float = 0.04f * saturation_1 * saturation_1 + 0.5f;
         var player as IPlayer = event.entity;
-        var prevData as IData = player.data;
-        SanityUtils.sanityPlus(sanity_plus, prevData);
-        event.player.update(newData);        
-    }
+        SanityUtils.sanityPlus(sanity_plus, player);
+        }
         if(unhealthy_check) {
         val saturation_2 as float = event.item.saturation;
-        val sanity_minus as float = 0.04 * saturation_2 * saturation_2 + 0.5;
-        var prevData = event.player.data;
-        var newData as IData = { sanity: sanity_minus };
-        SanityUtils.sanityMinus(sanity_minus, prevData, newData);
-        event.player.update(newData);
-    }
+        val sanity_minus as float = 0.04f * saturation_2 * saturation_2 + 0.5f;
+        var player as IPlayer = event.entity;
+        SanityUtils.sanityMinus(sanity_minus, player);
+        }
         if(!healthy_check && !unhealthy_check && event.item.isFood) {
         val saturation_3 as float = event.item.saturation;
-        val sanity_the_rest as float = 0.02 * saturation_3 * saturation_3 + 0.3;
+        val sanity_the_rest as float = 0.02f * saturation_3 * saturation_3 + 0.3f;
         var player as IPlayer = event.entity;
-        var prevData as IData = player.data;
-        var newData as IData = { sanity: sanity_the_rest };
-        funtions.sanityPlus(sanity_plus, prevData, newData);
-        event.player.update(newData);
+        SanityUtils.sanityPlus(sanity_the_rest, player);
+        }
     }
-});
-*/
+);
