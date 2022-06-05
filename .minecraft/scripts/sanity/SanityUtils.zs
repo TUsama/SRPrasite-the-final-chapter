@@ -11,47 +11,56 @@ function sanitySta(sanity as float) as float{
     return sanitySta;
 }
 
-//理智检测，检查是否有理智。
+//理智数据检测。
 function checkSanity(player as IPlayer){
-    if (!isNull(player.data.sanity)) {
-        var sanity as float = sanitySta(player.data.sanity.asFloat());
-        print(sanity);
-        player.update(sanity);
-    } else {
-        var prevData as IData = player.data;
-        var updateSanity as IData = prevData + { sanity:  100 };
-        player.update(updateSanity);
+    var remote as bool = !player.world.remote
+    //检测玩家是否在服务端。
+    if (remote){
+    //检查玩家是否有理智数据。
+        if (!isNull(player.data.sanity)) {
+            var sanity as float = sanitySta(player.data.sanity.asFloat());
+            print(sanity);
+            player.update(sanity);
+        } else {
+            //如果没有理智数据，则为其添加理智数据。
+            var prevData as IData = player.data;
+            var updateSanity as IData = prevData + { sanity:  100 };
+            player.update(updateSanity);
+        }
     }
 }
 //理智变动的抽象过程，需要输入变化值，变化类型以及对应玩家。
 function sanityModifier(amount as float, behavior as int, player as IPlayer){
     var prevData as IData = player.data;
     var currentSanity as float = prevData.sanity.asFloat();
+    var remote as bool = !player.world.remote
     //0意味着增加。
-    if (behavior == 0){
-        //如果现有理智为100，则跳过。
-        if (currentSanity == 100.0f){
-        } else {
-            var finalSanity as float = sanitySta(currentSanity + amount);
-            var newData as IData = prevData + { sanity: finalSanity };
-            player.update(newData);
-            print(finalSanity);
+    if (remote){
+        if (behavior == 0){
+            //如果现有理智为100，则跳过。
+            if (currentSanity == 100.0f){
+            } else {
+                var finalSanity as float = sanitySta(currentSanity + amount);
+                var newData as IData = prevData + { sanity: finalSanity };
+                player.update(newData);
+                print(finalSanity);
+            }
         }
-    }
-    //1意味着减去。
-    if (behavior == 1){    
-        //如果现有理智为0，则跳过。
-        if (currentSanity == 0.0f) {
-        } else {
-            var finalSanity as float = sanitySta(currentSanity - amount);
-            var newData as IData = prevData + { sanity: finalSanity };
-            player.update(newData);
-            print(finalSanity);
+        //1意味着减去。
+        if (behavior == 1){    
+            //如果现有理智为0，则跳过。
+            if (currentSanity == 0.0f) {
+            } else {
+                var finalSanity as float = sanitySta(currentSanity - amount);
+                var newData as IData = prevData + { sanity: finalSanity };
+                player.update(newData);
+                print(finalSanity);
+            }
         }
-    }
-    //若既不是增加也不是减少，则输出语句。
-    if (!behavior == 0 && !behavior == 1){
-        print("behavior is wrong!");
+        //若既不是增加也不是减少，则输出语句。
+        if (!behavior == 0 && !behavior == 1){
+            print("behavior is wrong!");
+        }
     }
 }
 
