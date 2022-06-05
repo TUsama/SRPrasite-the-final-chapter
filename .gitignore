@@ -66,3 +66,6 @@ MinecraftModWatcher.exe
 bfg-1.14.0.jar
 .git.bfg-report
 gitlistobjectbysize.sh
+.minecraft/dropt.log
+.minecraft/scripts/.zsrc
+.minecraft/config/tinker_ore_dict_melting_cache.dat

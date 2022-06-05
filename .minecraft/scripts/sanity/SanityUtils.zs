@@ -13,7 +13,7 @@ function sanitySta(sanity as float) as float{
 
 //理智数据检测。
 function checkSanity(player as IPlayer){
-    var remote as bool = !player.world.remote
+    var remote as bool = !player.world.remote;
     //检测玩家是否在服务端。
     if (remote){
     //检查玩家是否有理智数据。
@@ -33,7 +33,7 @@ function checkSanity(player as IPlayer){
 function sanityModifier(amount as float, behavior as int, player as IPlayer){
     var prevData as IData = player.data;
     var currentSanity as float = prevData.sanity.asFloat();
-    var remote as bool = !player.world.remote
+    var remote as bool = !player.world.remote;
     //0意味着增加。
     if (remote){
         if (behavior == 0){

@@ -1,12 +1,4 @@
 {
-  "realistictorches:torch_lit": [
-    {
-      "identity": {
-        "metadata": -1
-      },
-      "temperature": 1.0
-    }
-  ],
   "tconstruct:firewood_stairs": [
     {
       "identity": {
@@ -19,6 +11,14 @@
     {
       "identity": {
         "metadata": 0
+      },
+      "temperature": 1.0
+    }
+  ],
+  "realistictorches:torch_lit": [
+    {
+      "identity": {
+        "metadata": -1
       },
       "temperature": 1.0
     }
