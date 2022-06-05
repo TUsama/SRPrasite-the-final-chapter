@@ -86,10 +86,11 @@ events.onEntityLivingDamage(function(event as crafttweaker.event.EntityLivingDam
             if (mob_check && dmgs_check) {
                 var dmg_amount as float = event.amount;
                 var sanity_minus as float = 0.009f * dmg_amount * dmg_amount + 0.05f;
+                print(sanity_minus);
                 SanityUtils.sanityMinus(sanity_minus, player);
             } else {
                 var sanity_minus as float = 0.05f;
-                var prevData as IData = player.data;
+                print(sanity_minus);
                 SanityUtils.sanityMinus(sanity_minus, player);
             }
         }
