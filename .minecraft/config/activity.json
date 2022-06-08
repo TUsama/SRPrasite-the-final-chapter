@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Clefal",
+      "uniqueId": "3ad78c5f-d8cf-47f1-bff9-a890f8e638ff"
+    },
+    "time": 1654514896728,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/QpvejTwwEn"
+    }
+  }
+]
