@@ -23,11 +23,6 @@ var hideAndRemove as IItemStack[] = [
     <nocubessrpaddon:flamethrowerbarrel>,
     <nocubessrpaddon:flamethrowergrip>,
     <nocubessrpaddon:flamethrowerpart>,
-    <bountifulbaubles:amuletcross>,
-    <bountifulbaubles:ringflywheel>,
-    <bountifulbaubles:ringflywheel>,
-    <bountifulbaubles:ringflywheeladvanced>,
-    <bountifulbaubles:ringflywheeladvanced>
 ];
 
 for item in hideAndRemove {

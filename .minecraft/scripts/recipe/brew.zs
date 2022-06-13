@@ -43,8 +43,8 @@ brewing.addBrew(<minecraft:potion>.withTag({Potion: "quark:resistance"}), <minec
 //褪黑素
 brewing.addBrew(<med:steroids>, <minecraft:fermented_spider_eye>, <med:melatonin>);
 //牛奶三件套
-brewing.addBrew(<birdsfoods:bottle_of_milk>, <minecraft:gunpowder>, <bottledmilk:milk_bottle_splash>);
-brewing.addBrew(<birdsfoods:bottle_of_milk>, <minecraft:dragon_breath>, <bottledmilk:milk_bottle_lingering>);
+brewing.addBrew(<vanillafoodpantry:milkdrink>, <minecraft:gunpowder>, <bottledmilk:milk_bottle_splash>);
+brewing.addBrew(<vanillafoodpantry:milkdrink>, <minecraft:dragon_breath>, <bottledmilk:milk_bottle_lingering>);
 
 //重写夸克的抗性药水
 //移除石英酿造粗制药水（输入，原料）
