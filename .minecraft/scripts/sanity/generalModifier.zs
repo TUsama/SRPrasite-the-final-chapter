@@ -12,7 +12,37 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.command.ICommandSender;
 import crafttweaker.world.IWorldInfo;
 import mods.ctutils.utils.Math;
+import mods.zenutils.DelayManager;
 
+mods.zenutils.DelayManager.addDelayWork(function() {
+    events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
+        var remote as bool = !event.player.world.remote;
+        var player as IPlayer = event.player;
+        var world as IWorld = event.player.world;
+        var worldTime as long = world.worldInfo.worldTotalTime;
+        if (remote && worldTime % 40 == 0){
+            //print("1");
+            /*var x as double = player.x;
+            var y as double = player.y;
+            var z as double = player.z;*/
+            var position as IBlockPos = player.position;
+            var block as IBlock = world.getBlock(position);
+            var lightLevel as float = block.definition.lightLevel;
+            //print(lightLevel);
+
+            //var currentPosition as IBlockPos = crafttweaker.util.Position3f.create(x, y, z).asBlockPos();
+            //var brightness as int = world.getBrightness(position);
+            if (lightLevel <= 4.0f){
+                SanityUtils.sanityMinus(0.05f, player);
+                print("0");
+            }
+            else {
+                SanityUtils.sanityPlus(0.03f, player);
+                print("1");
+            }
+        }
+    });
+}, 1 * 20);
 
 /*events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
     var player as IPlayer = event.player;
@@ -41,14 +71,5 @@ import mods.ctutils.utils.Math;
         }
     }
 
-});
+});*/
 
-
-var i as int = 0;
-while(i <= 10) {
-    print(i);
-    i = i + 1;
-    if (i == 10) {
-        //i = 0;
-    }
-}*/

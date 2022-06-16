@@ -1,0 +1,64 @@
+// Mod Version: 1.4.2
+{
+    //Name of the creature type. Will be converted to lowercase internally. "unknown" is not allowed (as it is used internally)
+    "name": "parasite",
+    //Whether or not creature with this type are immune to critical hits.
+    "critical_hit_immunity": true,
+    //A list of potion effects of the form <modid>:<effect_name> that mobs of this type should be immune to. Works for main and sub types (dual typed mobs inherit all potion immunities from both types).
+    //As you'd expect, modded potion effects work.
+    "potion_immunities": [
+        "minecraft:poison",
+        "minecraft:instant_damage",
+        "scalingfeast:softstomach"
+    ],
+    //A list of mobs of the form <modid>:<mobid> of mobs that get this type. Works with modded mobs, as you'd expect. Mobs with multiple types inherit everything from all types.
+    "mobs": [
+        "srparasites:pri_longarms",
+        "srparasites:pri_manducater",
+        "srparasites:pri_summoner",
+        "srparasites:pri_reeker",
+        "srparasites:pri_yelloweye",
+        "srparasites:pri_bolster",
+        "srparasites:pri_arachnida",
+        "srparasites:pri_lum",
+        "srparasites:host",
+        "srparasites:crux",
+        "srparasites:heed",
+        "srparasites:sim_bear",
+        "srparasites:sim_enderman",
+        "srparasites:sim_adventurer",
+        "srparasites:sim_bigspider",
+        "srparasites:sim_human",
+        "srparasites:sim_humanhead",
+        "srparasites:sim_villager",
+        "srparasites:sim_villagerhead",
+        "srparasites:sim_cow",
+        "srparasites:sim_cowhead",
+        "srparasites:sim_horse",
+        "srparasites:sim_horsehead",
+        "srparasites:sim_pig",
+        "srparasites:sim_pighead",
+        "srparasites:sim_sheep",
+        "srparasites:sim_sheephead",
+        "srparasites:sim_wolf",
+        "srparasites:sim_wolfhead",
+        "srparasites:sim_dragone",
+        "srparasites:overseer",
+        "srparasites:bomber_light",
+        "srparasites:bomber_heavy",
+        "srparasites:carrier_heavy",
+        "srparasites:buglin",
+        "srparasites:carrier_flying",
+        "srparasites:rupter",
+        "srparasites:anc_dreadnaut",
+        "srparasites:anc_overlord",
+        "srparasites:vigilante",
+        "srparasites:ada_longarms",
+        "srparasites:ada_summoner",
+        "srparasites:ada_manducater",
+        "srparasites:ada_reeker",
+        "srparasites:ada_yelloweye",
+        "srparasites:ada_bolster",
+        "srparasites:ada_arachnida",
+            ]
+}

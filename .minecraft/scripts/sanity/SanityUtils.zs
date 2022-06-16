@@ -10,7 +10,7 @@ import mods.ctutils.utils.Math;
 function sanitySta(currentSanity as float, player as IPlayer) as float{
     var maxPlayerSanity as float = player.data.sanity.maxSanity.asFloat();
     var minPlayerSanity as float = player.data.sanity.minSanity.asFloat();
-    var sanitySta as float = Math.clamp(currentSanity, maxPlayerSanity, minPlayerSanity);
+    var sanitySta as float = Math.clamp(currentSanity, minPlayerSanity, maxPlayerSanity);
     return sanitySta;
 }
 
@@ -42,7 +42,7 @@ function checkSanity(player as IPlayer){
             };
             var prevData as IData = player.data;
             var updateSanity as IData = prevData + sanity;
-            print(updateSanity);
+            //print(updateSanity);
             player.update(updateSanity);
         }
     }
@@ -50,20 +50,26 @@ function checkSanity(player as IPlayer){
 //理智变动的抽象过程，需要输入变化值，变化类型以及对应玩家。
 function sanityModifier(amount as float, behavior as int, player as IPlayer){
     var prevSanityData as IData = player.data.sanity;
+    //print(prevSanityData);
     var remote as bool = !player.world.remote;
     if (remote && !isNull(prevSanityData)){
         var currentSanity as float = prevSanityData.currentSanity.asFloat();
         //0意味着增加。
         if (behavior == 0){
             var maxSanity as float =  prevSanityData.maxSanity.asFloat();
-            print(currentSanity);
+            //print(currentSanity);
             if (currentSanity == maxSanity){
             //如果现有理智为100，则跳过。
             } else {
                 var finalSanity as float = sanitySta(currentSanity + amount, player);
-                var newData as IData = prevSanityData + { currentSanity: finalSanity };
+                var newData as IData = 
+                {
+                    sanity : 
+                    prevSanityData + { currentSanity: finalSanity }                
+                
+                };
                 player.update(newData);
-                print(finalSanity);
+                //print(finalSanity);
             }
         }
         //1意味着减去。
@@ -72,10 +78,18 @@ function sanityModifier(amount as float, behavior as int, player as IPlayer){
             //如果现有理智为0，则跳过。
             if (currentSanity == minSanity) {
             } else {
+                //print(currentSanity - amount);
                 var finalSanity as float = sanitySta(currentSanity - amount, player);
-                var newData as IData = prevSanityData + { currentSanity: finalSanity };
+                var newData as IData = 
+                {
+                    sanity : 
+                    prevSanityData + { currentSanity: finalSanity }                
+                
+                };
                 player.update(newData);
-                print(finalSanity);
+                //print(finalSanity);
+                //print(newData);
+                //print(player.data);
             }
         }
         //若既不是增加也不是减少，则输出语句。
@@ -90,21 +104,31 @@ function sanityIntervalModifier(amount as float, behavior as int, player as IPla
     var prevSanityData as IData = player.data.sanity;
     //0意味着增加。
     if (remote && !isNull(prevSanityData)){
-        print(prevSanityData);
+        //print(prevSanityData);
         var currentSanity as float = prevSanityData.currentSanity.asFloat();
         var maxPlayerSanity as float = player.data.sanity.maxSanity.asFloat();
         var minPlayerSanity as float = player.data.sanity.minSanity.asFloat();
         if (behavior == 0 && maxPlayerSanity < 100.0f){
             //更新最大值。
             var newMaxSanity = max(maxPlayerSanity + amount, 100.0f);
-            var finalSanityData as IData = prevSanityData + { maxSanity : newMaxSanity };
+            var finalSanityData as IData = 
+                {
+                    sanity : 
+                    prevSanityData + { maxSanity : newMaxSanity }
+                
+                };
             player.update(finalSanityData);
         }
         //1意味着减去，并且最小值不小于0。
         if (behavior == 1 && minPlayerSanity > 0.0f){
             //如果现有理智为0，则跳过。
             var newMinSanity = max(minPlayerSanity - amount, 0.0f);
-            var finalSanityData as IData = prevSanityData + { minSanity : newMinSanity };
+            var finalSanityData as IData = 
+                {
+                    sanity : 
+                    prevSanityData + { minSanity : newMinSanity }
+                
+                };
             player.update(finalSanityData);
         }
         //若既不是增加也不是减少，则输出语句。

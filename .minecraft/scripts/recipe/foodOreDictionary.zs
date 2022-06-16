@@ -29,7 +29,6 @@ var sweatFood as IItemStack[] = [
     <vanillafoodpantry:milkdrink:397>,
     <vanillafoodpantry:milkdrink:393>,
     <vanillafoodpantry:milkdrink:398>,
-    <simpledifficulty:juice:*>
 
 ];
 
